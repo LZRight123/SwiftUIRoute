@@ -7,11 +7,11 @@
 
 import UIKit
 
-class RouteSplitViewController: UISplitViewController {
-    override func viewDidLoad() {
-        preferredDisplayMode = .twoBesideSecondary
-        presentsWithGesture = false
-        preferredPrimaryColumnWidthFraction = 0.35
-        maximumPrimaryColumnWidth = view.bounds.width / 2
-    }
-}
+//class RouteSplitViewController: UISplitViewController {
+//    override func viewDidLoad() {
+//        preferredDisplayMode = .twoBesideSecondary
+//        presentsWithGesture = false
+//        preferredPrimaryColumnWidthFraction = 0.35
+//        maximumPrimaryColumnWidth = view.bounds.width / 2
+//    }
+//}

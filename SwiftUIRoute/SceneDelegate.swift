@@ -18,9 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = RouteNavigationController(rootViewController: ViewController())
-            self.window = window
-            window.makeKeyAndVisible()
+            RouteStore.shared.configWindow(window: window)
 //            watermarkView.frame = window.bounds
 //            watermarkView.layer.zPosition = .greatestFiniteMagnitude
 //            watermarkView.addWatermark()

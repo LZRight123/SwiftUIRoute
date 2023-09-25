@@ -21,7 +21,7 @@ extension UIViewController {
         return nil
     }
     
-     static func topViewController(_ base: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
+    static func topViewController(_ base: UIViewController? = RouteStore.shared.window?.rootViewController) -> UIViewController? {
         if let nav = base as? UINavigationController {
             return topViewController(nav.visibleViewController)
         }

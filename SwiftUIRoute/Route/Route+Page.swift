@@ -9,8 +9,10 @@ import Foundation
 
 extension Route {
     enum Page: String {
-        case root
-        case placeholder
+        case welcome
+        case main
+        case login
+        
         case sheet
         case alert
         case featureAlert

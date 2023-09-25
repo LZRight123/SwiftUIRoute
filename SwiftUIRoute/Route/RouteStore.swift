@@ -10,39 +10,33 @@ import SwiftUI
 final class RouteStore: NSObject, ObservableObject {
     static let shared = RouteStore()
     
-    private var isPad: Bool {
-        UIDevice.current.userInterfaceIdiom == .pad
+    //    private var isPad: Bool {
+    //        UIDevice.current.userInterfaceIdiom == .pad
+    //    }
+    private(set) var window: UIWindow?
+    func configWindow(window: UIWindow) {
+        window.rootViewController = welcome
+        window.makeKeyAndVisible()
+        self.window = window
     }
-    private(set) lazy var rootViewController: RouteSplitViewController = {
-        let rootView = RootView()
+    
+    private(set) lazy var welcome: RouteNavigationController = {
+        let page = WelcomeView()
         let rootViewController = RouteViewController(
-            route: rootView.route,
-            content: rootView
+            route: page.route,
+            content: page
         )
-        let placeholderView = RoutePlaceholderView()
-        let placeholderViewController = RouteViewController(
-            route: placeholderView.route,
-            content: placeholderView
+        let result = RouteNavigationController(rootViewController: rootViewController)
+        return result
+    }()
+    
+    private(set) lazy var rootViewController: RouteNavigationController = {
+        let page = MainView()
+        let rootViewController = RouteViewController(
+            route: page.route,
+            content: page
         )
-        let result = RouteSplitViewController(style: .doubleColumn)
-        if isPad {
-            // 主屏幕：一直存在不会消失
-            result.setViewController(
-                makeRouteNavigationController(rootViewController),
-                for: .primary
-            )
-            // 副屏幕：可被替换，但会一直存在
-            result.setViewController(
-                makeRouteNavigationController(placeholderViewController),
-                for: .secondary
-            )
-        } else {
-            // 单屏幕
-            result.setViewController(
-                makeRouteNavigationController(rootViewController),
-                for: .secondary
-            )
-        }
+        let result = RouteNavigationController(rootViewController: rootViewController)
         return result
     }()
 }
@@ -52,7 +46,8 @@ extension RouteStore {
     func present<Content>(
         _ content: Content,
         modalStyle: UIModalPresentationStyle? = nil,
-        transition: UIViewControllerTransitioningDelegate? = nil
+        transition: UIViewControllerTransitioningDelegate? = nil,
+        animated: Bool = true
     ) where Content: View & Routable {
         let viewController = RouteViewController(
             route: content.route,
@@ -64,21 +59,17 @@ extension RouteStore {
             backgroundColor: .clear
         )
         navigationController.transitioningDelegate = transition
-        present(navigationController)
+        present(navigationController, animated: animated)
         
     }
     
     
     func push<Content>(_ content: Content) where Content: View & Routable {
-        if isPad {
-            showDetail(content)
-        } else {
-            let viewController = RouteViewController(
-                route: content.route,
-                content: content
-            )
-            push(viewController)
-        }
+        let viewController = RouteViewController(
+            route: content.route,
+            content: content
+        )
+        push(viewController)
     }
     
     func pop(animated: Bool = true, completion: (() -> Void)? = nil) {
@@ -113,15 +104,7 @@ extension RouteStore {
     }
     
     func popToRoot(animation: Bool = true, completion: (() -> Void)? = nil) {
-        if isPad {
-            // iPad: 因为右侧 secondaryVC 会一直存在
-            // 所以当 topVC 的 navVC 是 secondaryVC 且栈顶 VC 是 topVC 时停止 pop
-            if topViewController?.navigationController == secondaryViewController,
-               secondaryViewController?.topViewController == topViewController
-            {
-                completion?()
-                return
-            }
+        if (topViewController as? Routable)?.page != .main {
             pop(animated: animation) { [weak self] in
                 self?.popToRoot(
                     animation: animation,
@@ -129,17 +112,7 @@ extension RouteStore {
                 )
             }
         } else {
-            // iPhone 上 Top View Controller 不是 root 的话继续 pop
-            if (topViewController as? Routable)?.page != .root {
-                pop(animated: animation) { [weak self] in
-                    self?.popToRoot(
-                        animation: animation,
-                        completion: completion
-                    )
-                }
-            } else {
-                completion?()
-            }
+            completion?()
         }
     }
     
@@ -172,25 +145,17 @@ extension RouteStore {
 
 /// 控制器相关
 extension RouteStore {
-    var primaryViewController: UINavigationController? {
-        rootViewController.viewController(for: .primary) as? UINavigationController
-    }
-    
-    var secondaryViewController: UINavigationController? {
-        rootViewController.viewController(for: .secondary) as? UINavigationController
-    }
-    
     /// 栈顶 VC:
     /// - iPhone: 屏幕上正在展示的 VC, 当没有任何被 Present | Push 的视图时, 为 `SecondaryVC`
     /// - iPad: 同 iPhone 逻辑, 虽然有主屏幕, 但由于 `SecondaryVC` 会一直存在的原因, TopVC 永远不会是 `PrimaryVC`
     var topViewController: UIViewController? {
-        let vc = UIViewController.topViewController()
-        return vc
-//        var result: UIViewController? = rootViewController
-//        while result?.top != nil {
-//            result = result?.top
-//        }
-//        return result
+        //        let vc = UIViewController.topViewController()
+        //        return vc
+        var result: UIViewController? = rootViewController
+        while result?.top != nil {
+            result = result?.top
+        }
+        return result
     }
     
     /// 栈顶 Page
@@ -201,7 +166,7 @@ extension RouteStore {
     /// 记录控制器堆栈
     var breadPath: String {
         /// 因为 present 操作都是在 topVC 的 nav
-        var presentedViewController = topViewController?.navigationController//secondaryViewController
+        var presentedViewController: UINavigationController? = rootViewController //topViewController?.navigationController
         var path: String = "tabbar 的值"
         while presentedViewController != nil {
             presentedViewController?.viewControllers.forEach {
@@ -218,7 +183,7 @@ extension RouteStore {
     /// 若控制器堆栈中存在 Sheet 出现的 Page, 返回 true, 否则返回 false
     var isInPageSheet: Bool {
         // 由于所有的 Push/Present 操作都不会在 `PrimaryVC` 上进行, 因此只需要遍历 `SecondaryVC` 的 presentedVC 栈
-        var presentedViewController = secondaryViewController?.presentedViewController as? UINavigationController
+        var presentedViewController = rootViewController.presentedViewController as? UINavigationController
         while presentedViewController != nil {
             if presentedViewController?.modalPresentationStyle == .pageSheet {
                 return true
