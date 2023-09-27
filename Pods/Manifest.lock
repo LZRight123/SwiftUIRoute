@@ -1,16 +1,54 @@
 PODS:
+  - Alamofire (5.8.0)
+  - KakaJSON (1.1.2)
+  - Kingfisher (7.9.1)
+  - MKProgress (1.1.0)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
   - PanModal (1.2.7)
+  - SwifterSwift/Dispatch (5.2.0)
+  - SwifterSwift/Foundation (5.2.0)
+  - SwifterSwift/SwiftStdlib (5.2.0)
+  - SwiftUIIntrospect (1.0.0)
+  - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
+  - KakaJSON (~> 1.1.2)
+  - Kingfisher (~> 7.0)
+  - MKProgress
+  - Moya (~> 15.0)
   - PanModal
+  - SwifterSwift/Dispatch
+  - SwifterSwift/Foundation
+  - SwifterSwift/SwiftStdlib
+  - SwiftUIIntrospect (~> 1.0)
+  - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
   trunk:
+    - Alamofire
+    - KakaJSON
+    - Kingfisher
+    - MKProgress
+    - Moya
     - PanModal
+    - SwifterSwift
+    - SwiftUIIntrospect
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
+  Alamofire: 0e92e751b3e9e66d7982db43919d01f313b8eb91
+  KakaJSON: cc5ff50a8c1cfbb09413db8496cb709a209e6137
+  Kingfisher: 1d14e9f59cbe19389f591c929000332bf70efd32
+  MKProgress: 260d166200323f3d991190a73ab2dc3a04b0f52f
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   PanModal: 3e16ead1a907fb06f4df3f13492fd00149fa4974
+  SwifterSwift: 334181863c416882d97b7a60c05054d9e4d799e2
+  SwiftUIIntrospect: 9f15bf51d1a7582e168a683debca38649f3e152e
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: 0de58c3d78d5cecc4df9bec1bdaabc31d08b888c
+PODFILE CHECKSUM: 8230b904b4565f82c373fa12c908b826809a0908
 
 COCOAPODS: 1.12.1

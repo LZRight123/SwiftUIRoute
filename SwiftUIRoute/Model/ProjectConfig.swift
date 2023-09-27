@@ -9,3 +9,18 @@
 @_exported import UIKit
 
 
+
+struct ProjectConfig {
+    enum Env {
+    case test, pro
+    }
+    
+    static let env = Env.test
+    
+    static var baseUrl: String {
+        switch env {
+        case .test: return "https://app.naduo.love"
+        case .pro: return "https://app.naduo.love"
+        }
+    }
+}

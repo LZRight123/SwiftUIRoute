@@ -6,11 +6,15 @@
 //
 
 import SwiftUI
+import MKProgress
 
+struct TestModel: Convertible {
+    var timestamp: Int = 0
+}
 struct HomeView: View {
     var body: some View {
         ZStack {
-            Color.blue.ignoresSafeArea(.all)
+            Color.white.ignoresSafeArea(.all)
             
             VStack(spacing: 20) {
                 Button {
@@ -22,6 +26,15 @@ struct HomeView: View {
                 
                 Button {
                     RouteStore.shared.present(PopView(pageType: .alert), modal: .custom, transition: FullscreenAnimatorDelegate.default)
+                    Task {
+                        
+                    
+                        
+                        MKProgress.show()
+                       await localDealy(dealy: 2000)
+                        MKProgress.hide()
+
+                    }
                 } label: {
                     Text("tap popover")
                         .foregroundColor(Color.red)
@@ -34,6 +47,18 @@ struct HomeView: View {
                         .foregroundColor(Color.red)
                 }
                 
+                
+                Button {
+                    Task {
+                    
+                        NDProgress.show()
+                        await localDealy(dealy: 2000)
+                        NDProgress.dismiss()
+                    }
+                } label: {
+                    Text("call api")
+                        .foregroundColor(Color.red)
+                }
             }
         }
     }
