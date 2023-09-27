@@ -6,12 +6,16 @@
 //
 
 import SwiftUI
+import PanModal
 
-class RouteViewController<Content>: UIHostingController<Content>, Routable, UIAdaptivePresentationControllerDelegate where Content: View {
+class RouteViewController<Content>: UIHostingController<Content>, Routable, CustomSheetable, UIAdaptivePresentationControllerDelegate where Content: View {
+    private(set) var targetPanModal: CustomSheetable?
+        
     let route: Route
-
+//    private var targetPanModal: PanModalPresentable?
     init(route: Route, content: Content) {
         self.route = route
+        targetPanModal = content as? CustomSheetable
         super.init(rootView: content)
     }
 
@@ -23,7 +27,7 @@ class RouteViewController<Content>: UIHostingController<Content>, Routable, UIAd
     override var preferredStatusBarStyle: UIStatusBarStyle {
         statusBarStyle
     }
-
+    
     // MARK: Routable
 
     var page: Route.Page {

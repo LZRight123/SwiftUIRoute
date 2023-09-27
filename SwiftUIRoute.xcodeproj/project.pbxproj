@@ -30,6 +30,14 @@
 		DF7196B92AA076900073F214 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7196B82AA076900073F214 /* UIViewController+.swift */; };
 		DF7196BB2AA07FCD0073F214 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7196BA2AA07FCD0073F214 /* View+.swift */; };
 		DF7D8B322AC3BDAA00FA0E01 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7D8B312AC3BDAA00FA0E01 /* HomeView.swift */; };
+		DF7D8B362AC3DECB00FA0E01 /* RouteViewController+CustomSheetable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7D8B352AC3DECB00FA0E01 /* RouteViewController+CustomSheetable.swift */; };
+		DF7D8B392AC3F4D700FA0E01 /* FullscreenAnimatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7D8B382AC3F4D700FA0E01 /* FullscreenAnimatorDelegate.swift */; };
+		DF7D8B3B2AC3F6F700FA0E01 /* PresentationBackgroudController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7D8B3A2AC3F6F700FA0E01 /* PresentationBackgroudController.swift */; };
+		DF7D8B3D2AC3FB9700FA0E01 /* BaseAnimatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7D8B3C2AC3FB9700FA0E01 /* BaseAnimatorDelegate.swift */; };
+		DF7D8B402AC3FF2500FA0E01 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7D8B3F2AC3FF2500FA0E01 /* TestView.swift */; };
+		DF7D8B432AC4089500FA0E01 /* NavBarViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7D8B422AC4089400FA0E01 /* NavBarViewModifier.swift */; };
+		DF7D8B452AC40C7A00FA0E01 /* BarBackgorundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7D8B442AC40C7A00FA0E01 /* BarBackgorundView.swift */; };
+		DF7D8B472AC40DDA00FA0E01 /* BottomBarViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7D8B462AC40DDA00FA0E01 /* BottomBarViewModifier.swift */; };
 		DFD766292AA983C300233310 /* SwiftUIAndModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD766282AA983C300233310 /* SwiftUIAndModifier.swift */; };
 		DFD7662B2AA9A0D900233310 /* ScrollViewContentOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD7662A2AA9A0D900233310 /* ScrollViewContentOffset.swift */; };
 /* End PBXBuildFile section */
@@ -62,6 +70,14 @@
 		DF7196B82AA076900073F214 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		DF7196BA2AA07FCD0073F214 /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
 		DF7D8B312AC3BDAA00FA0E01 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DF7D8B352AC3DECB00FA0E01 /* RouteViewController+CustomSheetable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RouteViewController+CustomSheetable.swift"; sourceTree = "<group>"; };
+		DF7D8B382AC3F4D700FA0E01 /* FullscreenAnimatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullscreenAnimatorDelegate.swift; sourceTree = "<group>"; };
+		DF7D8B3A2AC3F6F700FA0E01 /* PresentationBackgroudController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationBackgroudController.swift; sourceTree = "<group>"; };
+		DF7D8B3C2AC3FB9700FA0E01 /* BaseAnimatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAnimatorDelegate.swift; sourceTree = "<group>"; };
+		DF7D8B3F2AC3FF2500FA0E01 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		DF7D8B422AC4089400FA0E01 /* NavBarViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarViewModifier.swift; sourceTree = "<group>"; };
+		DF7D8B442AC40C7A00FA0E01 /* BarBackgorundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarBackgorundView.swift; sourceTree = "<group>"; };
+		DF7D8B462AC40DDA00FA0E01 /* BottomBarViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBarViewModifier.swift; sourceTree = "<group>"; };
 		DFD766282AA983C300233310 /* SwiftUIAndModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAndModifier.swift; sourceTree = "<group>"; };
 		DFD7662A2AA9A0D900233310 /* ScrollViewContentOffset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewContentOffset.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,7 +100,6 @@
 				7B2DF52C205F1FEEFAE013C7 /* Pods-SwiftUIRoute.debug.xcconfig */,
 				00868EB4704E26CF766DB6C7 /* Pods-SwiftUIRoute.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -99,6 +114,7 @@
 		DF1F354C2AC17FB1009147D3 /* Page */ = {
 			isa = PBXGroup;
 			children = (
+				DF7D8B3E2AC3FF1B00FA0E01 /* test */,
 				DF7D8B302AC3BD9D00FA0E01 /* home */,
 				DF1F356A2AC1907B009147D3 /* login */,
 				DF1F355F2AC1855E009147D3 /* welcome */,
@@ -135,6 +151,7 @@
 		DF1F35552AC18051009147D3 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				DF7D8B412AC4087E00FA0E01 /* bar */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -212,11 +229,12 @@
 		DF7196A22AA072760073F214 /* Route */ = {
 			isa = PBXGroup;
 			children = (
+				DF7D8B372AC3F48A00FA0E01 /* Animator */,
 				DF7196A32AA0728B0073F214 /* Base */,
 				DF7196AC2AA073A90073F214 /* Route.swift */,
-				DF7196B02AA074490073F214 /* Route+Page.swift */,
 				DF7196B22AA074D00073F214 /* RouteStore.swift */,
 				DF1F35652AC18B22009147D3 /* RouteStore+Route.swift */,
+				DF7196B02AA074490073F214 /* Route+Page.swift */,
 			);
 			path = Route;
 			sourceTree = "<group>";
@@ -227,6 +245,7 @@
 				DF7196A42AA072A40073F214 /* RouteNavigationController.swift */,
 				DF7196A62AA072B30073F214 /* RouteSplitViewController.swift */,
 				DF7196A82AA072C00073F214 /* RouteViewController.swift */,
+				DF7D8B352AC3DECB00FA0E01 /* RouteViewController+CustomSheetable.swift */,
 				DF7196B82AA076900073F214 /* UIViewController+.swift */,
 				DF7196BA2AA07FCD0073F214 /* View+.swift */,
 			);
@@ -239,6 +258,34 @@
 				DF7D8B312AC3BDAA00FA0E01 /* HomeView.swift */,
 			);
 			path = home;
+			sourceTree = "<group>";
+		};
+		DF7D8B372AC3F48A00FA0E01 /* Animator */ = {
+			isa = PBXGroup;
+			children = (
+				DF7D8B3A2AC3F6F700FA0E01 /* PresentationBackgroudController.swift */,
+				DF7D8B3C2AC3FB9700FA0E01 /* BaseAnimatorDelegate.swift */,
+				DF7D8B382AC3F4D700FA0E01 /* FullscreenAnimatorDelegate.swift */,
+			);
+			path = Animator;
+			sourceTree = "<group>";
+		};
+		DF7D8B3E2AC3FF1B00FA0E01 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				DF7D8B3F2AC3FF2500FA0E01 /* TestView.swift */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		DF7D8B412AC4087E00FA0E01 /* bar */ = {
+			isa = PBXGroup;
+			children = (
+				DF7D8B442AC40C7A00FA0E01 /* BarBackgorundView.swift */,
+				DF7D8B422AC4089400FA0E01 /* NavBarViewModifier.swift */,
+				DF7D8B462AC40DDA00FA0E01 /* BottomBarViewModifier.swift */,
+			);
+			path = bar;
 			sourceTree = "<group>";
 		};
 		DFD766272AA983A100233310 /* sundell */ = {
@@ -365,8 +412,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF1F355C2AC182B5009147D3 /* MainTabBar.swift in Sources */,
+				DF7D8B3D2AC3FB9700FA0E01 /* BaseAnimatorDelegate.swift in Sources */,
+				DF7D8B392AC3F4D700FA0E01 /* FullscreenAnimatorDelegate.swift in Sources */,
 				DF7196A52AA072A40073F214 /* RouteNavigationController.swift in Sources */,
 				DF1F35572AC18075009147D3 /* AAEnums.swift in Sources */,
+				DF7D8B452AC40C7A00FA0E01 /* BarBackgorundView.swift in Sources */,
 				DFD766292AA983C300233310 /* SwiftUIAndModifier.swift in Sources */,
 				DF7196BB2AA07FCD0073F214 /* View+.swift in Sources */,
 				DF7D8B322AC3BDAA00FA0E01 /* HomeView.swift in Sources */,
@@ -375,15 +425,20 @@
 				DF7196A92AA072C00073F214 /* RouteViewController.swift in Sources */,
 				DF71968F2AA0702E0073F214 /* AppDelegate.swift in Sources */,
 				DF1F35692AC18CD4009147D3 /* GlobalFuction.swift in Sources */,
+				DF7D8B362AC3DECB00FA0E01 /* RouteViewController+CustomSheetable.swift in Sources */,
 				DF1F355A2AC1825F009147D3 /* MainViewModel.swift in Sources */,
+				DF7D8B432AC4089500FA0E01 /* NavBarViewModifier.swift in Sources */,
 				DF7196B32AA074D00073F214 /* RouteStore.swift in Sources */,
 				DF7196AD2AA073A90073F214 /* Route.swift in Sources */,
 				DF7196B12AA074490073F214 /* Route+Page.swift in Sources */,
 				DF7196B92AA076900073F214 /* UIViewController+.swift in Sources */,
 				DF1F356C2AC1908A009147D3 /* LoginView.swift in Sources */,
 				DF7196912AA0702E0073F214 /* SceneDelegate.swift in Sources */,
+				DF7D8B3B2AC3F6F700FA0E01 /* PresentationBackgroudController.swift in Sources */,
 				DF7196A72AA072B30073F214 /* RouteSplitViewController.swift in Sources */,
 				DF1F35522AC17FF9009147D3 /* MainView.swift in Sources */,
+				DF7D8B472AC40DDA00FA0E01 /* BottomBarViewModifier.swift in Sources */,
+				DF7D8B402AC3FF2500FA0E01 /* TestView.swift in Sources */,
 				DF1F35632AC185B8009147D3 /* WelcomeViewModel.swift in Sources */,
 				DF1F35612AC18573009147D3 /* WelcomeView.swift in Sources */,
 			);

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import PanModal
 
 final class RouteStore: NSObject, ObservableObject {
     static let shared = RouteStore()
@@ -41,11 +42,12 @@ final class RouteStore: NSObject, ObservableObject {
     }()
 }
 
+
 /// 路由
 extension RouteStore {
     func present<Content>(
         _ content: Content,
-        modalStyle: UIModalPresentationStyle? = nil,
+        modal: UIModalPresentationStyle? = nil,
         transition: UIViewControllerTransitioningDelegate? = nil,
         animated: Bool = true
     ) where Content: View & Routable {
@@ -53,14 +55,29 @@ extension RouteStore {
             route: content.route,
             content: content
         )
-        let navigationController = makeRouteNavigationController(
-            viewController,
-            modalStyle: modalStyle,
-            backgroundColor: .clear
-        )
-        navigationController.transitioningDelegate = transition
-        present(navigationController, animated: animated)
-        
+       
+        switch content.page {
+        case .sheet:
+            viewController.modalPresentationStyle = .custom
+            viewController.view.backgroundColor = .clear
+            viewController.transitioningDelegate = PanModalPresentationDelegate.default
+            present(viewController, animated: animated)
+        case .alert:
+            viewController.modalPresentationStyle = .custom
+            viewController.view.backgroundColor = .clear
+            viewController.transitioningDelegate = FullscreenAnimatorDelegate.default
+            present(viewController, animated: animated)
+        default:
+            let navigationController = makeRouteNavigationController(
+                viewController,
+                modalStyle: modal,
+                backgroundColor: .clear
+            )
+            navigationController.transitioningDelegate = transition
+            present(navigationController, animated: animated)
+        }
+       
+       
     }
     
     

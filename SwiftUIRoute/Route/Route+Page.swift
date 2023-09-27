@@ -13,8 +13,11 @@ extension Route {
         case main
         case login
         
+        // PanModal
         case sheet
+        // FullscreenAnimator
         case alert
-        case featureAlert
+        
+        case test 
     }
 }

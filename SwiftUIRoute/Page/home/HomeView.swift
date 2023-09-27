@@ -12,14 +12,28 @@ struct HomeView: View {
         ZStack {
             Color.blue.ignoresSafeArea(.all)
             
-            VStack {
+            VStack(spacing: 20) {
                 Button {
-                    RouteStore.shared.present(PopView(), modalStyle: .popover)
+                    RouteStore.shared.present(PopView(pageType: .sheet))
                 } label: {
-                    Text("tap me")
+                    Text("tap bottom sheet")
+                        .foregroundColor(Color.red)
+                }
+                
+                Button {
+                    RouteStore.shared.present(PopView(pageType: .alert), modal: .custom, transition: FullscreenAnimatorDelegate.default)
+                } label: {
+                    Text("tap popover")
                         .foregroundColor(Color.red)
                 }
 
+                Button {
+                    RouteStore.shared.push(TestView())
+                } label: {
+                    Text("push test")
+                        .foregroundColor(Color.red)
+                }
+                
             }
         }
     }
@@ -33,22 +47,27 @@ struct HomeView_Previews: PreviewProvider {
 
 
 struct PopView: View {
+    let pageType: Route.Page
+    
     var body: some View {
-        VStack {
-//            Spacer()
-            ZStack {
-                
+        ZStack {
+            Color.red.opacity(0.01)
+                .ignoresSafeArea(.all)
+                .onTapGesture {
+                    RouteStore.shared.pop()
+                }
+            VStack {
+                Color.yellow
+                .onTapGesture {
+                    RouteStore.shared.pop()
+                }
             }
-            .frame(width: 100, height: 200)
-            .background(Color.yellow)
-            .onTapGesture {
-                RouteStore.shared.pop()
-            }
+            .frame(width: UIScreen.main.bounds.width  * 0.8, height: 500)
         }
-        .ignoresSafeArea(.all, edges: .bottom)
+      
         
     }
 }
-extension PopView: Routable {
-    var page: Route.Page { .sheet }
+extension PopView: Routable, CustomSheetable {
+    var page: Route.Page { pageType }
 }
