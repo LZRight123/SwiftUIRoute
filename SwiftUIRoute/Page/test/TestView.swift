@@ -9,12 +9,16 @@ import SwiftUI
 
 struct TestView: View , Routable {
     var page: Route.Page { .test }
+    
     var body: some View {
         Color.red
             .ndnavbar {
                 Text("title")
+                    .foregroundColor(.acc1)
+                    .font(.system(size: 12))
             } trailing: {
                 Text("trailing")
+                    .foregroundColor(.f1)
             }
             .ndbottomBar {
                 Text("ndbottomBar")

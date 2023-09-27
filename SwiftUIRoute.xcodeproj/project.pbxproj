@@ -38,6 +38,12 @@
 		DF7D8B432AC4089500FA0E01 /* NavBarViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7D8B422AC4089400FA0E01 /* NavBarViewModifier.swift */; };
 		DF7D8B452AC40C7A00FA0E01 /* BarBackgorundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7D8B442AC40C7A00FA0E01 /* BarBackgorundView.swift */; };
 		DF7D8B472AC40DDA00FA0E01 /* BottomBarViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7D8B462AC40DDA00FA0E01 /* BottomBarViewModifier.swift */; };
+		DF7D8B4A2AC4108C00FA0E01 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7D8B492AC4108C00FA0E01 /* Color+.swift */; };
+		DF7D8B4C2AC412E100FA0E01 /* Text+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7D8B4B2AC412E100FA0E01 /* Text+.swift */; };
+		DF7D8B4E2AC4132D00FA0E01 /* Shape+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7D8B4D2AC4132D00FA0E01 /* Shape+.swift */; };
+		DF7D8B502AC4136E00FA0E01 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7D8B4F2AC4136E00FA0E01 /* View+.swift */; };
+		DF7D8B522AC413C300FA0E01 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7D8B512AC413C300FA0E01 /* BlurView.swift */; };
+		DF7D8B542AC413FA00FA0E01 /* ProjectConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7D8B532AC413FA00FA0E01 /* ProjectConfig.swift */; };
 		DFD766292AA983C300233310 /* SwiftUIAndModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD766282AA983C300233310 /* SwiftUIAndModifier.swift */; };
 		DFD7662B2AA9A0D900233310 /* ScrollViewContentOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD7662A2AA9A0D900233310 /* ScrollViewContentOffset.swift */; };
 /* End PBXBuildFile section */
@@ -78,6 +84,12 @@
 		DF7D8B422AC4089400FA0E01 /* NavBarViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarViewModifier.swift; sourceTree = "<group>"; };
 		DF7D8B442AC40C7A00FA0E01 /* BarBackgorundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarBackgorundView.swift; sourceTree = "<group>"; };
 		DF7D8B462AC40DDA00FA0E01 /* BottomBarViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBarViewModifier.swift; sourceTree = "<group>"; };
+		DF7D8B492AC4108C00FA0E01 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
+		DF7D8B4B2AC412E100FA0E01 /* Text+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+.swift"; sourceTree = "<group>"; };
+		DF7D8B4D2AC4132D00FA0E01 /* Shape+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Shape+.swift"; sourceTree = "<group>"; };
+		DF7D8B4F2AC4136E00FA0E01 /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
+		DF7D8B512AC413C300FA0E01 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		DF7D8B532AC413FA00FA0E01 /* ProjectConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectConfig.swift; sourceTree = "<group>"; };
 		DFD766282AA983C300233310 /* SwiftUIAndModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAndModifier.swift; sourceTree = "<group>"; };
 		DFD7662A2AA9A0D900233310 /* ScrollViewContentOffset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewContentOffset.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,6 +156,7 @@
 		DF1F35542AC18044009147D3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DF7D8B532AC413FA00FA0E01 /* ProjectConfig.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -151,7 +164,10 @@
 		DF1F35552AC18051009147D3 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				DF7D8B482AC4107000FA0E01 /* extension */,
 				DF7D8B412AC4087E00FA0E01 /* bar */,
+				DF7D8B4D2AC4132D00FA0E01 /* Shape+.swift */,
+				DF7D8B512AC413C300FA0E01 /* BlurView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -286,6 +302,16 @@
 				DF7D8B462AC40DDA00FA0E01 /* BottomBarViewModifier.swift */,
 			);
 			path = bar;
+			sourceTree = "<group>";
+		};
+		DF7D8B482AC4107000FA0E01 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				DF7D8B492AC4108C00FA0E01 /* Color+.swift */,
+				DF7D8B4B2AC412E100FA0E01 /* Text+.swift */,
+				DF7D8B4F2AC4136E00FA0E01 /* View+.swift */,
+			);
+			path = extension;
 			sourceTree = "<group>";
 		};
 		DFD766272AA983A100233310 /* sundell */ = {
@@ -430,13 +456,19 @@
 				DF7D8B432AC4089500FA0E01 /* NavBarViewModifier.swift in Sources */,
 				DF7196B32AA074D00073F214 /* RouteStore.swift in Sources */,
 				DF7196AD2AA073A90073F214 /* Route.swift in Sources */,
+				DF7D8B542AC413FA00FA0E01 /* ProjectConfig.swift in Sources */,
 				DF7196B12AA074490073F214 /* Route+Page.swift in Sources */,
 				DF7196B92AA076900073F214 /* UIViewController+.swift in Sources */,
 				DF1F356C2AC1908A009147D3 /* LoginView.swift in Sources */,
+				DF7D8B522AC413C300FA0E01 /* BlurView.swift in Sources */,
+				DF7D8B502AC4136E00FA0E01 /* View+.swift in Sources */,
+				DF7D8B4C2AC412E100FA0E01 /* Text+.swift in Sources */,
 				DF7196912AA0702E0073F214 /* SceneDelegate.swift in Sources */,
 				DF7D8B3B2AC3F6F700FA0E01 /* PresentationBackgroudController.swift in Sources */,
 				DF7196A72AA072B30073F214 /* RouteSplitViewController.swift in Sources */,
+				DF7D8B4E2AC4132D00FA0E01 /* Shape+.swift in Sources */,
 				DF1F35522AC17FF9009147D3 /* MainView.swift in Sources */,
+				DF7D8B4A2AC4108C00FA0E01 /* Color+.swift in Sources */,
 				DF7D8B472AC40DDA00FA0E01 /* BottomBarViewModifier.swift in Sources */,
 				DF7D8B402AC3FF2500FA0E01 /* TestView.swift in Sources */,
 				DF1F35632AC185B8009147D3 /* WelcomeViewModel.swift in Sources */,

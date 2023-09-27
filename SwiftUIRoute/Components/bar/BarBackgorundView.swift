@@ -10,11 +10,11 @@ import SwiftUI
 struct BarBackgorundView: View {
     var body: some View {
         ZStack {
-            Color.pink
+            Color.white.opacity(0.8)
                 .ignoresSafeArea(edges: [.top, .bottom])
             
-//            BlurView(style: .light)
-//                .ignoresSafeArea(edges: [.top, .bottom])
+            BlurView(style: .light)
+                .ignoresSafeArea(edges: [.top, .bottom])
         }
     }
 }
