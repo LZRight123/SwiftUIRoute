@@ -13,8 +13,13 @@ struct MainView: View {
     var body: some View {
         VStack(spacing: 0) {
             ZStack {
-                Button("LOGIN") {
-                    RouteStore.shared.present(LoginView())
+                switch vm.currentTabBarType {
+                case .one: HomeView()
+                default:
+                    Button("LOGIN") {
+                        RouteStore.shared.present(LoginView())
+                    }
+                    
                 }
             }
             .frame(maxWidth: .infinity ,maxHeight: .infinity)

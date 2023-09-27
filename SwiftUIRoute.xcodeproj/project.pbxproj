@@ -28,6 +28,7 @@
 		DF7196B32AA074D00073F214 /* RouteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7196B22AA074D00073F214 /* RouteStore.swift */; };
 		DF7196B92AA076900073F214 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7196B82AA076900073F214 /* UIViewController+.swift */; };
 		DF7196BB2AA07FCD0073F214 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7196BA2AA07FCD0073F214 /* View+.swift */; };
+		DF7D8B322AC3BDAA00FA0E01 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7D8B312AC3BDAA00FA0E01 /* HomeView.swift */; };
 		DFD766292AA983C300233310 /* SwiftUIAndModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD766282AA983C300233310 /* SwiftUIAndModifier.swift */; };
 		DFD7662B2AA9A0D900233310 /* ScrollViewContentOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD7662A2AA9A0D900233310 /* ScrollViewContentOffset.swift */; };
 /* End PBXBuildFile section */
@@ -56,6 +57,7 @@
 		DF7196B22AA074D00073F214 /* RouteStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteStore.swift; sourceTree = "<group>"; };
 		DF7196B82AA076900073F214 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		DF7196BA2AA07FCD0073F214 /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
+		DF7D8B312AC3BDAA00FA0E01 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		DFD766282AA983C300233310 /* SwiftUIAndModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAndModifier.swift; sourceTree = "<group>"; };
 		DFD7662A2AA9A0D900233310 /* ScrollViewContentOffset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewContentOffset.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,6 +76,7 @@
 		DF1F354C2AC17FB1009147D3 /* Page */ = {
 			isa = PBXGroup;
 			children = (
+				DF7D8B302AC3BD9D00FA0E01 /* home */,
 				DF1F356A2AC1907B009147D3 /* login */,
 				DF1F355F2AC1855E009147D3 /* welcome */,
 				DF1F35502AC17FEB009147D3 /* main */,
@@ -205,6 +208,14 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		DF7D8B302AC3BD9D00FA0E01 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				DF7D8B312AC3BDAA00FA0E01 /* HomeView.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
 		DFD766272AA983A100233310 /* sundell */ = {
 			isa = PBXGroup;
 			children = (
@@ -289,6 +300,7 @@
 				DF1F35572AC18075009147D3 /* AAEnums.swift in Sources */,
 				DFD766292AA983C300233310 /* SwiftUIAndModifier.swift in Sources */,
 				DF7196BB2AA07FCD0073F214 /* View+.swift in Sources */,
+				DF7D8B322AC3BDAA00FA0E01 /* HomeView.swift in Sources */,
 				DFD7662B2AA9A0D900233310 /* ScrollViewContentOffset.swift in Sources */,
 				DF1F35662AC18B22009147D3 /* RouteStore+Route.swift in Sources */,
 				DF7196A92AA072C00073F214 /* RouteViewController.swift in Sources */,

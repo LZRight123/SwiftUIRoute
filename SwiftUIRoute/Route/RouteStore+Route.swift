@@ -10,6 +10,6 @@ import SwiftUI
 extension RouteStore {
     func routeToMain() {
         window?.rootViewController = rootViewController
-        RouteStore.shared.present(LoginView(), modalStyle: .fullScreen, animated: false)
+//        RouteStore.shared.present(LoginView(), modalStyle: .fullScreen, animated: false)
     }
 }
