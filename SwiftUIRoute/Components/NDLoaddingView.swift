@@ -11,7 +11,7 @@ struct NDLoaddingView: View {
     var body: some View {
         ZStack {
             Color.black.opacity(0.01).ignoresSafeArea(.all)
-            NDLottieView(lottieFlie: "loading_gray")
+            NDLottieView(lottieFlie: "loading_cir")
                 .loopMode(.loop)
                 .play()
                 .frame(width: 88, height: 88)

@@ -53,6 +53,7 @@
 		DF815D752AC43B1C008DB6DC /* Response+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF815D742AC43B1C008DB6DC /* Response+Extension.swift */; };
 		DF815D782AC4404C008DB6DC /* TestApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF815D772AC4404C008DB6DC /* TestApi.swift */; };
 		DF815D7A2AC44DBA008DB6DC /* NDProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF815D792AC44DBA008DB6DC /* NDProgress.swift */; };
+		DF87F0812AC56955000A0F37 /* loading_cir.json in Resources */ = {isa = PBXBuildFile; fileRef = DF87F0802AC56955000A0F37 /* loading_cir.json */; };
 		DF8C8F132AC5186200DF8895 /* NDScaffold.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8C8F122AC5186200DF8895 /* NDScaffold.swift */; };
 		DF8C8F152AC5230500DF8895 /* NDNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8C8F142AC5230500DF8895 /* NDNavBar.swift */; };
 		DF8C8F172AC5273700DF8895 /* NDBottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8C8F162AC5273700DF8895 /* NDBottomBar.swift */; };
@@ -74,6 +75,7 @@
 		DF8C8F412AC553A900DF8895 /* launchtext.json in Resources */ = {isa = PBXBuildFile; fileRef = DF8C8F322AC553A900DF8895 /* launchtext.json */; };
 		DF8C8F432AC55B9800DF8895 /* NDLoaddingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8C8F422AC55B9800DF8895 /* NDLoaddingView.swift */; };
 		DF8C8F452AC5602400DF8895 /* NDToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8C8F442AC5602400DF8895 /* NDToast.swift */; };
+		DF8C8F472AC5684100DF8895 /* loading_dot.json in Resources */ = {isa = PBXBuildFile; fileRef = DF8C8F462AC5684100DF8895 /* loading_dot.json */; };
 		DFD766292AA983C300233310 /* SwiftUIAndModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD766282AA983C300233310 /* SwiftUIAndModifier.swift */; };
 		DFD7662B2AA9A0D900233310 /* ScrollViewContentOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD7662A2AA9A0D900233310 /* ScrollViewContentOffset.swift */; };
 /* End PBXBuildFile section */
@@ -129,6 +131,7 @@
 		DF815D742AC43B1C008DB6DC /* Response+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Response+Extension.swift"; sourceTree = "<group>"; };
 		DF815D772AC4404C008DB6DC /* TestApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApi.swift; sourceTree = "<group>"; };
 		DF815D792AC44DBA008DB6DC /* NDProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDProgress.swift; sourceTree = "<group>"; };
+		DF87F0802AC56955000A0F37 /* loading_cir.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading_cir.json; sourceTree = "<group>"; };
 		DF8C8F122AC5186200DF8895 /* NDScaffold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDScaffold.swift; sourceTree = "<group>"; };
 		DF8C8F142AC5230500DF8895 /* NDNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDNavBar.swift; sourceTree = "<group>"; };
 		DF8C8F162AC5273700DF8895 /* NDBottomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDBottomBar.swift; sourceTree = "<group>"; };
@@ -150,6 +153,7 @@
 		DF8C8F322AC553A900DF8895 /* launchtext.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = launchtext.json; sourceTree = "<group>"; };
 		DF8C8F422AC55B9800DF8895 /* NDLoaddingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDLoaddingView.swift; sourceTree = "<group>"; };
 		DF8C8F442AC5602400DF8895 /* NDToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDToast.swift; sourceTree = "<group>"; };
+		DF8C8F462AC5684100DF8895 /* loading_dot.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading_dot.json; sourceTree = "<group>"; };
 		DFD766282AA983C300233310 /* SwiftUIAndModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAndModifier.swift; sourceTree = "<group>"; };
 		DFD7662A2AA9A0D900233310 /* ScrollViewContentOffset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewContentOffset.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -448,6 +452,8 @@
 		DF8C8F242AC553A900DF8895 /* Loading */ = {
 			isa = PBXGroup;
 			children = (
+				DF87F0802AC56955000A0F37 /* loading_cir.json */,
+				DF8C8F462AC5684100DF8895 /* loading_dot.json */,
 				DF8C8F252AC553A900DF8895 /* ailoading.json */,
 				DF8C8F262AC553A900DF8895 /* loading_gray.json */,
 			);
@@ -559,10 +565,12 @@
 				DF8C8F392AC553A900DF8895 /* flower_appear.json in Resources */,
 				DF8C8F3C2AC553A900DF8895 /* blue_bell.json in Resources */,
 				DF8C8F402AC553A900DF8895 /* loginsky.json in Resources */,
+				DF87F0812AC56955000A0F37 /* loading_cir.json in Resources */,
 				DF8C8F362AC553A900DF8895 /* Tosta_Check_Trash.json in Resources */,
 				DF8C8F3D2AC553A900DF8895 /* yellow_bell.json in Resources */,
 				DF8C8F3F2AC553A900DF8895 /* wellcome.json in Resources */,
 				DF71969B2AA0702F0073F214 /* LaunchScreen.storyboard in Resources */,
+				DF8C8F472AC5684100DF8895 /* loading_dot.json in Resources */,
 				DF8C8F332AC553A900DF8895 /* Tosta_Check_User.json in Resources */,
 				DF8C8F412AC553A900DF8895 /* launchtext.json in Resources */,
 				DF8C8F372AC553A900DF8895 /* ailoading.json in Resources */,

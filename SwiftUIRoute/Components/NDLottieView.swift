@@ -13,15 +13,21 @@ struct NDLottieView: UIViewRepresentable {
     let lottieFlie: String
     let animationView = LottieAnimationView()
 
-    func makeUIView(context: Context) -> LottieAnimationView {
+    func makeUIView(context: Context) -> UIView {
+        let view = UIView(frame: .zero)
         let animation = LottieAnimation.named(lottieFlie)
         animationView.animation = animation
         animationView.contentMode = .scaleAspectFit
         animationView.animationSpeed = 1
-        return animationView
+        animationView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(animationView)
+        NSLayoutConstraint.activate([
+            animationView.widthAnchor.constraint(equalTo: view.widthAnchor), animationView.heightAnchor.constraint(equalTo: view.heightAnchor),
+        ])
+        return view
     }
     
-    func updateUIView(_ uiView: LottieAnimationView, context: Context) {
+    func updateUIView(_ uiView: UIView, context: Context) {
     }
 
 }
