@@ -17,7 +17,9 @@ target 'SwiftUIRoute' do
   pod 'KakaJSON', '~> 1.1.2' # JSON处理
   pod 'SwiftyJSON', '~> 4.0'# JSON处理
   pod 'Kingfisher', '~> 7.0'# Web图片
-  pod 'MKProgress'
+  pod 'lottie-ios'# JSON动画
+  pod 'Toaster' # https://github.com/devxoul/Toaster
+
 end
 
 post_install do |installer|

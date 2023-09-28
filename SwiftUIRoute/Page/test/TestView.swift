@@ -21,18 +21,25 @@ struct TestView: View , Routable {
                 NDBottomBar {
                     HStack {
                         Text("bottomBar")
+                            .onTapGesture {
+                                isShowLoading.toggle()
+                            }
                     }
                 }
             }
         ) {
             VStack {
                 Spacer()
+//                NDLottieView(lottieFlie: "loading_gray")
+//                    .loopMode(.loop)
+//                    .play()
+//                    .frame(width: 77, height: 77)
+
                 TextField("Enter text", text: $text)
                               .textFieldStyle(RoundedBorderTextFieldStyle())
                               .padding()
                 Text("123")
             }
-            .background(Color.random)
         }
     }
 }

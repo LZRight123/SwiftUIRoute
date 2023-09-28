@@ -113,7 +113,7 @@ struct NDScaffold<Content: View>: View {
     }
     
     var loading: some View {
-        Color.red.clipShape(Capsule()).frame(width: 100, height: 100)
+        NDLoaddingView()
     }
 }
 

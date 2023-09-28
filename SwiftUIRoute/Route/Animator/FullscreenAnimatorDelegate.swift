@@ -14,13 +14,9 @@ class FullscreenAnimatorDelegate: BaseAnimatorDelegate {
     
     override func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         guard
-            let toVC = transitionContext.viewController(forKey: .to),
-            let fromVC = transitionContext.viewController(forKey: .from)
+            let toVC = transitionContext.viewController(forKey: .to)
             else { return }
-        
-        // Calls viewWillAppear and viewWillDisappear
-        fromVC.beginAppearanceTransition(false, animated: true)
-        
+                
         if transitionContext.viewController(forKey: .to)?.isBeingPresented == true {
             let toView = transitionContext.view(forKey: .to)
             toView?.frame = transitionContext.finalFrame(for: toVC)

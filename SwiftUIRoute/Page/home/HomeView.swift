@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import MKProgress
+import Toaster
 
 struct TestModel: Convertible {
     var timestamp: Int = 0
@@ -27,13 +27,9 @@ struct HomeView: View {
                 Button {
                     RouteStore.shared.present(PopView(pageType: .alert), modal: .custom, transition: FullscreenAnimatorDelegate.default)
                     Task {
-                        
-                    
-                        
-                        MKProgress.show()
-                       await localDealy(dealy: 2000)
-                        MKProgress.hide()
+                        ToastView.appearance().bottomOffsetPortrait = UIScreen.main.bounds.height * 0.5
 
+                        Toast(text: "123", duration: Delay.long).show()
                     }
                 } label: {
                     Text("tap popover")

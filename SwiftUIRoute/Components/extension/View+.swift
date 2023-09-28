@@ -7,6 +7,17 @@
 
 import SwiftUI
 
+extension View {
+    @ViewBuilder
+    func ndoverlayer(_ isShow: Bool, @ViewBuilder content: () -> some View) -> some View {
+        if isShow {
+            overlay(content())
+        } else {
+            self 
+        }
+    }
+}
+
 //MARK: - Debug
 extension View {
     func debugModifier<T: View>(_ modifier: (Self) -> T) -> some View {

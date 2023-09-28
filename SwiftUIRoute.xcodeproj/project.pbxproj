@@ -56,7 +56,24 @@
 		DF8C8F132AC5186200DF8895 /* NDScaffold.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8C8F122AC5186200DF8895 /* NDScaffold.swift */; };
 		DF8C8F152AC5230500DF8895 /* NDNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8C8F142AC5230500DF8895 /* NDNavBar.swift */; };
 		DF8C8F172AC5273700DF8895 /* NDBottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8C8F162AC5273700DF8895 /* NDBottomBar.swift */; };
-		DF8C8F192AC530E300DF8895 /* OverlayerViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8C8F182AC530E300DF8895 /* OverlayerViewModifier.swift */; };
+		DF8C8F1D2AC54E9800DF8895 /* NDLottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8C8F1C2AC54E9700DF8895 /* NDLottieView.swift */; };
+		DF8C8F332AC553A900DF8895 /* Tosta_Check_User.json in Resources */ = {isa = PBXBuildFile; fileRef = DF8C8F202AC553A900DF8895 /* Tosta_Check_User.json */; };
+		DF8C8F342AC553A900DF8895 /* Tosta_Check_OK.json in Resources */ = {isa = PBXBuildFile; fileRef = DF8C8F212AC553A900DF8895 /* Tosta_Check_OK.json */; };
+		DF8C8F352AC553A900DF8895 /* Tosta_Check_Phone.json in Resources */ = {isa = PBXBuildFile; fileRef = DF8C8F222AC553A900DF8895 /* Tosta_Check_Phone.json */; };
+		DF8C8F362AC553A900DF8895 /* Tosta_Check_Trash.json in Resources */ = {isa = PBXBuildFile; fileRef = DF8C8F232AC553A900DF8895 /* Tosta_Check_Trash.json */; };
+		DF8C8F372AC553A900DF8895 /* ailoading.json in Resources */ = {isa = PBXBuildFile; fileRef = DF8C8F252AC553A900DF8895 /* ailoading.json */; };
+		DF8C8F382AC553A900DF8895 /* loading_gray.json in Resources */ = {isa = PBXBuildFile; fileRef = DF8C8F262AC553A900DF8895 /* loading_gray.json */; };
+		DF8C8F392AC553A900DF8895 /* flower_appear.json in Resources */ = {isa = PBXBuildFile; fileRef = DF8C8F282AC553A900DF8895 /* flower_appear.json */; };
+		DF8C8F3A2AC553A900DF8895 /* flower_open.json in Resources */ = {isa = PBXBuildFile; fileRef = DF8C8F292AC553A900DF8895 /* flower_open.json */; };
+		DF8C8F3B2AC553A900DF8895 /* red_bell.json in Resources */ = {isa = PBXBuildFile; fileRef = DF8C8F2B2AC553A900DF8895 /* red_bell.json */; };
+		DF8C8F3C2AC553A900DF8895 /* blue_bell.json in Resources */ = {isa = PBXBuildFile; fileRef = DF8C8F2C2AC553A900DF8895 /* blue_bell.json */; };
+		DF8C8F3D2AC553A900DF8895 /* yellow_bell.json in Resources */ = {isa = PBXBuildFile; fileRef = DF8C8F2D2AC553A900DF8895 /* yellow_bell.json */; };
+		DF8C8F3E2AC553A900DF8895 /* green_bell.json in Resources */ = {isa = PBXBuildFile; fileRef = DF8C8F2E2AC553A900DF8895 /* green_bell.json */; };
+		DF8C8F3F2AC553A900DF8895 /* wellcome.json in Resources */ = {isa = PBXBuildFile; fileRef = DF8C8F302AC553A900DF8895 /* wellcome.json */; };
+		DF8C8F402AC553A900DF8895 /* loginsky.json in Resources */ = {isa = PBXBuildFile; fileRef = DF8C8F312AC553A900DF8895 /* loginsky.json */; };
+		DF8C8F412AC553A900DF8895 /* launchtext.json in Resources */ = {isa = PBXBuildFile; fileRef = DF8C8F322AC553A900DF8895 /* launchtext.json */; };
+		DF8C8F432AC55B9800DF8895 /* NDLoaddingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8C8F422AC55B9800DF8895 /* NDLoaddingView.swift */; };
+		DF8C8F452AC5602400DF8895 /* NDToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8C8F442AC5602400DF8895 /* NDToast.swift */; };
 		DFD766292AA983C300233310 /* SwiftUIAndModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD766282AA983C300233310 /* SwiftUIAndModifier.swift */; };
 		DFD7662B2AA9A0D900233310 /* ScrollViewContentOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD7662A2AA9A0D900233310 /* ScrollViewContentOffset.swift */; };
 /* End PBXBuildFile section */
@@ -115,7 +132,24 @@
 		DF8C8F122AC5186200DF8895 /* NDScaffold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDScaffold.swift; sourceTree = "<group>"; };
 		DF8C8F142AC5230500DF8895 /* NDNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDNavBar.swift; sourceTree = "<group>"; };
 		DF8C8F162AC5273700DF8895 /* NDBottomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDBottomBar.swift; sourceTree = "<group>"; };
-		DF8C8F182AC530E300DF8895 /* OverlayerViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayerViewModifier.swift; sourceTree = "<group>"; };
+		DF8C8F1C2AC54E9700DF8895 /* NDLottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDLottieView.swift; sourceTree = "<group>"; };
+		DF8C8F202AC553A900DF8895 /* Tosta_Check_User.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Tosta_Check_User.json; sourceTree = "<group>"; };
+		DF8C8F212AC553A900DF8895 /* Tosta_Check_OK.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Tosta_Check_OK.json; sourceTree = "<group>"; };
+		DF8C8F222AC553A900DF8895 /* Tosta_Check_Phone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Tosta_Check_Phone.json; sourceTree = "<group>"; };
+		DF8C8F232AC553A900DF8895 /* Tosta_Check_Trash.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Tosta_Check_Trash.json; sourceTree = "<group>"; };
+		DF8C8F252AC553A900DF8895 /* ailoading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ailoading.json; sourceTree = "<group>"; };
+		DF8C8F262AC553A900DF8895 /* loading_gray.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading_gray.json; sourceTree = "<group>"; };
+		DF8C8F282AC553A900DF8895 /* flower_appear.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = flower_appear.json; sourceTree = "<group>"; };
+		DF8C8F292AC553A900DF8895 /* flower_open.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = flower_open.json; sourceTree = "<group>"; };
+		DF8C8F2B2AC553A900DF8895 /* red_bell.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = red_bell.json; sourceTree = "<group>"; };
+		DF8C8F2C2AC553A900DF8895 /* blue_bell.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = blue_bell.json; sourceTree = "<group>"; };
+		DF8C8F2D2AC553A900DF8895 /* yellow_bell.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = yellow_bell.json; sourceTree = "<group>"; };
+		DF8C8F2E2AC553A900DF8895 /* green_bell.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = green_bell.json; sourceTree = "<group>"; };
+		DF8C8F302AC553A900DF8895 /* wellcome.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wellcome.json; sourceTree = "<group>"; };
+		DF8C8F312AC553A900DF8895 /* loginsky.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loginsky.json; sourceTree = "<group>"; };
+		DF8C8F322AC553A900DF8895 /* launchtext.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = launchtext.json; sourceTree = "<group>"; };
+		DF8C8F422AC55B9800DF8895 /* NDLoaddingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDLoaddingView.swift; sourceTree = "<group>"; };
+		DF8C8F442AC5602400DF8895 /* NDToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDToast.swift; sourceTree = "<group>"; };
 		DFD766282AA983C300233310 /* SwiftUIAndModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAndModifier.swift; sourceTree = "<group>"; };
 		DFD7662A2AA9A0D900233310 /* ScrollViewContentOffset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewContentOffset.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -195,8 +229,10 @@
 				DF7D8B4D2AC4132D00FA0E01 /* Shape+.swift */,
 				DF7D8B512AC413C300FA0E01 /* BlurView.swift */,
 				DF815D792AC44DBA008DB6DC /* NDProgress.swift */,
+				DF8C8F442AC5602400DF8895 /* NDToast.swift */,
+				DF8C8F1C2AC54E9700DF8895 /* NDLottieView.swift */,
 				DF8C8F122AC5186200DF8895 /* NDScaffold.swift */,
-				DF8C8F182AC530E300DF8895 /* OverlayerViewModifier.swift */,
+				DF8C8F422AC55B9800DF8895 /* NDLoaddingView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -267,6 +303,7 @@
 				DF7196902AA0702E0073F214 /* SceneDelegate.swift */,
 				DFD766272AA983A100233310 /* sundell */,
 				DF7196972AA0702F0073F214 /* Assets.xcassets */,
+				DF8C8F1E2AC553A900DF8895 /* LottieJsonFiles */,
 				DF7196992AA0702F0073F214 /* LaunchScreen.storyboard */,
 				DF71969C2AA0702F0073F214 /* Info.plist */,
 			);
@@ -385,6 +422,68 @@
 			path = Apis;
 			sourceTree = "<group>";
 		};
+		DF8C8F1E2AC553A900DF8895 /* LottieJsonFiles */ = {
+			isa = PBXGroup;
+			children = (
+				DF8C8F1F2AC553A900DF8895 /* Tosta */,
+				DF8C8F242AC553A900DF8895 /* Loading */,
+				DF8C8F272AC553A900DF8895 /* Flower */,
+				DF8C8F2A2AC553A900DF8895 /* Bell */,
+				DF8C8F2F2AC553A900DF8895 /* Login */,
+			);
+			path = LottieJsonFiles;
+			sourceTree = "<group>";
+		};
+		DF8C8F1F2AC553A900DF8895 /* Tosta */ = {
+			isa = PBXGroup;
+			children = (
+				DF8C8F202AC553A900DF8895 /* Tosta_Check_User.json */,
+				DF8C8F212AC553A900DF8895 /* Tosta_Check_OK.json */,
+				DF8C8F222AC553A900DF8895 /* Tosta_Check_Phone.json */,
+				DF8C8F232AC553A900DF8895 /* Tosta_Check_Trash.json */,
+			);
+			path = Tosta;
+			sourceTree = "<group>";
+		};
+		DF8C8F242AC553A900DF8895 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				DF8C8F252AC553A900DF8895 /* ailoading.json */,
+				DF8C8F262AC553A900DF8895 /* loading_gray.json */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		DF8C8F272AC553A900DF8895 /* Flower */ = {
+			isa = PBXGroup;
+			children = (
+				DF8C8F282AC553A900DF8895 /* flower_appear.json */,
+				DF8C8F292AC553A900DF8895 /* flower_open.json */,
+			);
+			path = Flower;
+			sourceTree = "<group>";
+		};
+		DF8C8F2A2AC553A900DF8895 /* Bell */ = {
+			isa = PBXGroup;
+			children = (
+				DF8C8F2B2AC553A900DF8895 /* red_bell.json */,
+				DF8C8F2C2AC553A900DF8895 /* blue_bell.json */,
+				DF8C8F2D2AC553A900DF8895 /* yellow_bell.json */,
+				DF8C8F2E2AC553A900DF8895 /* green_bell.json */,
+			);
+			path = Bell;
+			sourceTree = "<group>";
+		};
+		DF8C8F2F2AC553A900DF8895 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DF8C8F302AC553A900DF8895 /* wellcome.json */,
+				DF8C8F312AC553A900DF8895 /* loginsky.json */,
+				DF8C8F322AC553A900DF8895 /* launchtext.json */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		DFD766272AA983A100233310 /* sundell */ = {
 			isa = PBXGroup;
 			children = (
@@ -454,8 +553,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF8C8F342AC553A900DF8895 /* Tosta_Check_OK.json in Resources */,
+				DF8C8F382AC553A900DF8895 /* loading_gray.json in Resources */,
+				DF8C8F3A2AC553A900DF8895 /* flower_open.json in Resources */,
+				DF8C8F392AC553A900DF8895 /* flower_appear.json in Resources */,
+				DF8C8F3C2AC553A900DF8895 /* blue_bell.json in Resources */,
+				DF8C8F402AC553A900DF8895 /* loginsky.json in Resources */,
+				DF8C8F362AC553A900DF8895 /* Tosta_Check_Trash.json in Resources */,
+				DF8C8F3D2AC553A900DF8895 /* yellow_bell.json in Resources */,
+				DF8C8F3F2AC553A900DF8895 /* wellcome.json in Resources */,
 				DF71969B2AA0702F0073F214 /* LaunchScreen.storyboard in Resources */,
+				DF8C8F332AC553A900DF8895 /* Tosta_Check_User.json in Resources */,
+				DF8C8F412AC553A900DF8895 /* launchtext.json in Resources */,
+				DF8C8F372AC553A900DF8895 /* ailoading.json in Resources */,
+				DF8C8F3E2AC553A900DF8895 /* green_bell.json in Resources */,
 				DF7196982AA0702F0073F214 /* Assets.xcassets in Resources */,
+				DF8C8F352AC553A900DF8895 /* Tosta_Check_Phone.json in Resources */,
+				DF8C8F3B2AC553A900DF8895 /* red_bell.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,8 +626,10 @@
 				DF7D8B3D2AC3FB9700FA0E01 /* BaseAnimatorDelegate.swift in Sources */,
 				DF7D8B392AC3F4D700FA0E01 /* FullscreenAnimatorDelegate.swift in Sources */,
 				DF7196A52AA072A40073F214 /* RouteNavigationController.swift in Sources */,
+				DF8C8F452AC5602400DF8895 /* NDToast.swift in Sources */,
 				DF1F35572AC18075009147D3 /* AAEnums.swift in Sources */,
 				DF7D8B452AC40C7A00FA0E01 /* BarBackgorundView.swift in Sources */,
+				DF8C8F432AC55B9800DF8895 /* NDLoaddingView.swift in Sources */,
 				DF815D7A2AC44DBA008DB6DC /* NDProgress.swift in Sources */,
 				DFD766292AA983C300233310 /* SwiftUIAndModifier.swift in Sources */,
 				DF7196BB2AA07FCD0073F214 /* View+Route.swift in Sources */,
@@ -523,7 +639,6 @@
 				DF1F35662AC18B22009147D3 /* RouteStore+Route.swift in Sources */,
 				DF7196A92AA072C00073F214 /* RouteViewController.swift in Sources */,
 				DF815D732AC43A65008DB6DC /* MoyaResult+Extension.swift in Sources */,
-				DF8C8F192AC530E300DF8895 /* OverlayerViewModifier.swift in Sources */,
 				DF71968F2AA0702E0073F214 /* AppDelegate.swift in Sources */,
 				DF1F35692AC18CD4009147D3 /* GlobalFuction.swift in Sources */,
 				DF7D8B362AC3DECB00FA0E01 /* RouteViewController+CustomSheetable.swift in Sources */,
@@ -546,6 +661,7 @@
 				DF7196912AA0702E0073F214 /* SceneDelegate.swift in Sources */,
 				DF8C8F132AC5186200DF8895 /* NDScaffold.swift in Sources */,
 				DF7D8B3B2AC3F6F700FA0E01 /* PresentationBackgroudController.swift in Sources */,
+				DF8C8F1D2AC54E9800DF8895 /* NDLottieView.swift in Sources */,
 				DF7196A72AA072B30073F214 /* RouteSplitViewController.swift in Sources */,
 				DF7D8B4E2AC4132D00FA0E01 /* Shape+.swift in Sources */,
 				DF1F35522AC17FF9009147D3 /* MainView.swift in Sources */,
