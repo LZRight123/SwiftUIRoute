@@ -69,13 +69,13 @@ extension NDTargetType {
         ]
         headers["standard-head"] = standardHeader.jsonString()
         // 追踪 ID
-        #if targetEnvironment(simulator)
-            headers["token"] = "83f6223abbed5c02574490a5f2f64010"
-        #else
-            if !UserManager.shared.AccessToken.isEmpty {
-                headers["token"] = UserManager.shared.AccessToken
-            }
-        #endif
+//        #if targetEnvironment(simulator)
+//            headers["token"] = "83f6223abbed5c02574490a5f2f64010"
+//        #else
+//            if !UserManager.shared.AccessToken.isEmpty {
+//                headers["token"] = UserManager.shared.AccessToken
+//            }
+//        #endif
 
         // 设备信息
         headers["device-type"] = UIDevice.current.model

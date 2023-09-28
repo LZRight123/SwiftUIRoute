@@ -21,8 +21,6 @@ extension View {
     ) -> some View {
         modifier(NavBarViewModifier(title: content, leading: leading, trailing: trailing))
     }
-    
-    
 }
 
 private struct NavBarViewModifier<Title: View,Leading: View, Trailing: View>: ViewModifier {
@@ -47,25 +45,17 @@ private struct NavBarViewModifier<Title: View,Leading: View, Trailing: View>: Vi
     }
     
     var navbar: some View {
-        ZStack {
-            Group {
-                //leading trailing
-                HStack(spacing: 0, content: {
-                    leading
-                    Spacer()
-                    trailing
-                })
-                .padding(.horizontal, 16)
-                
-                // titleView
-                HStack(spacing: 0, content: {
-                    self.title
-                })
+        NDNavBar(
+            leading: {
+                title
+            },
+            trailing: {
+                trailing
+            },
+            content: {
+                title
             }
-            .frame(height: 44)
-        }
-        .frame(minHeight: 0.1)
-        .frame(maxWidth: .infinity)
-        .background(BarBackgorundView())
+        )
     }
 }
+

@@ -53,6 +53,10 @@
 		DF815D752AC43B1C008DB6DC /* Response+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF815D742AC43B1C008DB6DC /* Response+Extension.swift */; };
 		DF815D782AC4404C008DB6DC /* TestApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF815D772AC4404C008DB6DC /* TestApi.swift */; };
 		DF815D7A2AC44DBA008DB6DC /* NDProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF815D792AC44DBA008DB6DC /* NDProgress.swift */; };
+		DF8C8F132AC5186200DF8895 /* NDScaffold.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8C8F122AC5186200DF8895 /* NDScaffold.swift */; };
+		DF8C8F152AC5230500DF8895 /* NDNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8C8F142AC5230500DF8895 /* NDNavBar.swift */; };
+		DF8C8F172AC5273700DF8895 /* NDBottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8C8F162AC5273700DF8895 /* NDBottomBar.swift */; };
+		DF8C8F192AC530E300DF8895 /* OverlayerViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8C8F182AC530E300DF8895 /* OverlayerViewModifier.swift */; };
 		DFD766292AA983C300233310 /* SwiftUIAndModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD766282AA983C300233310 /* SwiftUIAndModifier.swift */; };
 		DFD7662B2AA9A0D900233310 /* ScrollViewContentOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD7662A2AA9A0D900233310 /* ScrollViewContentOffset.swift */; };
 /* End PBXBuildFile section */
@@ -108,6 +112,10 @@
 		DF815D742AC43B1C008DB6DC /* Response+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Response+Extension.swift"; sourceTree = "<group>"; };
 		DF815D772AC4404C008DB6DC /* TestApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApi.swift; sourceTree = "<group>"; };
 		DF815D792AC44DBA008DB6DC /* NDProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDProgress.swift; sourceTree = "<group>"; };
+		DF8C8F122AC5186200DF8895 /* NDScaffold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDScaffold.swift; sourceTree = "<group>"; };
+		DF8C8F142AC5230500DF8895 /* NDNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDNavBar.swift; sourceTree = "<group>"; };
+		DF8C8F162AC5273700DF8895 /* NDBottomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDBottomBar.swift; sourceTree = "<group>"; };
+		DF8C8F182AC530E300DF8895 /* OverlayerViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayerViewModifier.swift; sourceTree = "<group>"; };
 		DFD766282AA983C300233310 /* SwiftUIAndModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAndModifier.swift; sourceTree = "<group>"; };
 		DFD7662A2AA9A0D900233310 /* ScrollViewContentOffset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewContentOffset.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -187,6 +195,8 @@
 				DF7D8B4D2AC4132D00FA0E01 /* Shape+.swift */,
 				DF7D8B512AC413C300FA0E01 /* BlurView.swift */,
 				DF815D792AC44DBA008DB6DC /* NDProgress.swift */,
+				DF8C8F122AC5186200DF8895 /* NDScaffold.swift */,
+				DF8C8F182AC530E300DF8895 /* OverlayerViewModifier.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -318,6 +328,8 @@
 		DF7D8B412AC4087E00FA0E01 /* bar */ = {
 			isa = PBXGroup;
 			children = (
+				DF8C8F142AC5230500DF8895 /* NDNavBar.swift */,
+				DF8C8F162AC5273700DF8895 /* NDBottomBar.swift */,
 				DF7D8B442AC40C7A00FA0E01 /* BarBackgorundView.swift */,
 				DF7D8B422AC4089400FA0E01 /* NavBarViewModifier.swift */,
 				DF7D8B462AC40DDA00FA0E01 /* BottomBarViewModifier.swift */,
@@ -505,11 +517,13 @@
 				DF815D7A2AC44DBA008DB6DC /* NDProgress.swift in Sources */,
 				DFD766292AA983C300233310 /* SwiftUIAndModifier.swift in Sources */,
 				DF7196BB2AA07FCD0073F214 /* View+Route.swift in Sources */,
+				DF8C8F152AC5230500DF8895 /* NDNavBar.swift in Sources */,
 				DF7D8B322AC3BDAA00FA0E01 /* HomeView.swift in Sources */,
 				DFD7662B2AA9A0D900233310 /* ScrollViewContentOffset.swift in Sources */,
 				DF1F35662AC18B22009147D3 /* RouteStore+Route.swift in Sources */,
 				DF7196A92AA072C00073F214 /* RouteViewController.swift in Sources */,
 				DF815D732AC43A65008DB6DC /* MoyaResult+Extension.swift in Sources */,
+				DF8C8F192AC530E300DF8895 /* OverlayerViewModifier.swift in Sources */,
 				DF71968F2AA0702E0073F214 /* AppDelegate.swift in Sources */,
 				DF1F35692AC18CD4009147D3 /* GlobalFuction.swift in Sources */,
 				DF7D8B362AC3DECB00FA0E01 /* RouteViewController+CustomSheetable.swift in Sources */,
@@ -519,6 +533,7 @@
 				DF815D6D2AC4394A008DB6DC /* NetworkPopPlugin.swift in Sources */,
 				DF7196B32AA074D00073F214 /* RouteStore.swift in Sources */,
 				DF7196AD2AA073A90073F214 /* Route.swift in Sources */,
+				DF8C8F172AC5273700DF8895 /* NDBottomBar.swift in Sources */,
 				DF815D692AC43889008DB6DC /* Networking.swift in Sources */,
 				DF7D8B542AC413FA00FA0E01 /* ProjectConfig.swift in Sources */,
 				DF7196B12AA074490073F214 /* Route+Page.swift in Sources */,
@@ -529,6 +544,7 @@
 				DF7D8B502AC4136E00FA0E01 /* View+.swift in Sources */,
 				DF7D8B4C2AC412E100FA0E01 /* Text+.swift in Sources */,
 				DF7196912AA0702E0073F214 /* SceneDelegate.swift in Sources */,
+				DF8C8F132AC5186200DF8895 /* NDScaffold.swift in Sources */,
 				DF7D8B3B2AC3F6F700FA0E01 /* PresentationBackgroudController.swift in Sources */,
 				DF7196A72AA072B30073F214 /* RouteSplitViewController.swift in Sources */,
 				DF7D8B4E2AC4132D00FA0E01 /* Shape+.swift in Sources */,

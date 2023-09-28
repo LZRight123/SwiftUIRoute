@@ -33,8 +33,8 @@ private struct BottomBarViewModifier<ContentView: View>: ViewModifier {
     }
     
     var bottomBar: some View {
-        contentView
-            .frame(maxWidth: .infinity)
-            .background(BarBackgorundView())
+        NDBottomBar { contentView }
+
     }
+    
 }

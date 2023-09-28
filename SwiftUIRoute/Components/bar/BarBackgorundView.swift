@@ -8,10 +8,14 @@
 import SwiftUI
 
 struct BarBackgorundView: View {
+    let color: Color
+    init(color: Color = .b2) {
+        self.color = color
+    }
+    
     var body: some View {
         ZStack {
-            Color.white.opacity(0.8)
-                .ignoresSafeArea(edges: [.top, .bottom])
+            color.ignoresSafeArea(edges: [.top, .bottom])
             
             BlurView(style: .light)
                 .ignoresSafeArea(edges: [.top, .bottom])

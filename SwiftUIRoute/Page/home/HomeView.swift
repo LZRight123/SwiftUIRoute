@@ -50,7 +50,6 @@ struct HomeView: View {
                 
                 Button {
                     Task {
-                    
                         NDProgress.show()
                         await localDealy(dealy: 2000)
                         NDProgress.dismiss()

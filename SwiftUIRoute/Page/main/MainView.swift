@@ -11,7 +11,14 @@ struct MainView: View {
     @StateObject var vm = MainViewModel()
     
     var body: some View {
-        VStack(spacing: 0) {
+        NDScaffold(
+            bottomBar: {
+                MainTabBar(onClickItem: {
+                    vm.currentTabBarType = $0
+                })
+                .environmentObject(vm)
+            }
+        ) {
             ZStack {
                 switch vm.currentTabBarType {
                 case .one: HomeView()
@@ -19,17 +26,12 @@ struct MainView: View {
                     Button("LOGIN") {
                         RouteStore.shared.present(LoginView())
                     }
-                    
+
                 }
             }
             .frame(maxWidth: .infinity ,maxHeight: .infinity)
             .background(Color.red)
             .ignoresSafeArea(.all)
-            
-            MainTabBar(onClickItem: {
-                vm.currentTabBarType = $0
-            })
-            .environmentObject(vm)
         }
     }
     

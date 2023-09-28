@@ -43,12 +43,12 @@ extension NDProgress {
         let hudWindow = UIWindow()
         hudWindow.windowLevel = UIWindow.Level.normal
         hudWindow.backgroundColor = UIColor.black.withAlphaComponent(0.1)
-        let vc = UIHostingController(rootView:
-                                        ZStack {
-            ProgressView()
-                .scaleEffect(3)
-                .progressViewStyle(CircularProgressViewStyle(tint: .gray))
-        }
+        // 去 https://lottiefiles.com/featured 下载一个免费的动画
+        let vc = UIHostingController(rootView:ZStack {
+                ProgressView()
+                    .scaleEffect(3)
+                    .progressViewStyle(CircularProgressViewStyle(tint: .gray))
+            }
             .frame(width: 100, height: 100)
             .background(Color.white)
         )

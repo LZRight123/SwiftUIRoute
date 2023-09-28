@@ -6,3 +6,15 @@
 //
 
 import SwiftUI
+
+public extension Text {
+    func ndfont(_ font: Font, textColor: Color) -> Text {
+        self.font(font)
+            .foregroundColor(textColor)
+    }
+
+    func ndfontSize(_ fontSize: CGFloat, textColor: Color) -> Text {
+        self.font(.system(size: fontSize))
+            .foregroundColor(textColor)
+    }
+}

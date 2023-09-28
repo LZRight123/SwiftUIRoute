@@ -10,20 +10,30 @@ import SwiftUI
 struct TestView: View , Routable {
     var page: Route.Page { .test }
     
+    @State private var text: String = ""
+    @State private var isShowLoading = true
+    
     var body: some View {
-        Color.red
-            .ndnavbar {
-                Text("title")
-                    .foregroundColor(.acc1)
-                    .font(.system(size: 12))
-            } trailing: {
-                Text("trailing")
-                    .foregroundColor(.f1)
+        NDScaffold(
+            isShowLoading: isShowLoading,
+            title: "测试一下",
+            bottomBar: {
+                NDBottomBar {
+                    HStack {
+                        Text("bottomBar")
+                    }
+                }
             }
-            .ndbottomBar {
-                Text("ndbottomBar")
-                    .padding(50)
+        ) {
+            VStack {
+                Spacer()
+                TextField("Enter text", text: $text)
+                              .textFieldStyle(RoundedBorderTextFieldStyle())
+                              .padding()
+                Text("123")
             }
+            .background(Color.random)
+        }
     }
 }
 
