@@ -10,7 +10,7 @@ import SwiftUI
 extension NDScaffold {
     init(
         bacgroundColor: Color = .b2,
-        contentColor: Color = .red,
+        contentColor: Color = .f1,
         isShowLoading: Bool = false,
         title: String,
         navBar: (() -> any View)? = nil,
@@ -24,11 +24,12 @@ extension NDScaffold {
             topBar: {
                 NDNavBar(
                     leading: {
-                        Text("自定义Icon")
-                            .ndfontSize(16, textColor: .acc1)
-                            .onTapGesture {
-                                RouteStore.shared.pop()
-                            }
+                        Button {
+                            RouteStore.shared.pop()
+                        } label: {
+                            Text("返回")
+                            Image(systemName: "back")
+                        }
                     },
                     trailing: navBar,
                     content: {

@@ -50,7 +50,7 @@ extension CustomSheetable {
     var panScrollable: UIScrollView? { nil }
     var topOffset: CGFloat { UIApplication.shared.windows.first?.windowScene?.statusBarManager?.statusBarFrame.height ?? 0 }
     var shortFormHeight: PanModalHeight { longFormHeight }
-    var longFormHeight: PanModalHeight { .contentHeightIgnoringSafeArea(300) }
+    var longFormHeight: PanModalHeight { .maxHeight }
     var panModalBackgroundColor: Color { Color.black.opacity(0.5) }
     var dragIndicatorBackgroundColor: Color { Color.red }
     var showDragIndicator: Bool { false }

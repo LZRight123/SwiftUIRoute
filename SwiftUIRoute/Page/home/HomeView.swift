@@ -70,22 +70,25 @@ struct PopView: View {
     let pageType: Route.Page
     
     var body: some View {
-        ZStack {
-            Color.red.opacity(0.01)
-                .ignoresSafeArea(.all)
-                .onTapGesture {
-                    RouteStore.shared.pop()
-                }
+        if pageType == .sheet {
             VStack {
-                Color.yellow
-                .onTapGesture {
-                    RouteStore.shared.pop()
+                Spacer(minLength: 0)
+                Color.random.ignoresSafeArea().onTapGesture {
+                    
                 }
+                .frame(height: 300)
             }
-            .frame(width: UIScreen.main.bounds.width  * 0.8, height: 500)
+            .contentShape(Rectangle())
+            .onTapGesture {
+                RouteStore.shared.pop()
+            }
+        } else {
+            Color.random.ignoresSafeArea().onTapGesture {
+                RouteStore.shared.pop()
+            }
+            .frame(height: 300)
+            .frame(width: 300)
         }
-      
-        
     }
 }
 extension PopView: Routable, CustomSheetable {
