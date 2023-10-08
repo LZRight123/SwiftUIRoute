@@ -12,5 +12,6 @@ class LocalUserMananger: ObservableObject {
     
     init() {
         
+        UserInfo()
     }
 }
