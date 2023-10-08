@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LoginView: View {
     var body: some View {
-        ZStack {
+        VStack {
             Color.gray.ignoresSafeArea(.all)
             
             
@@ -20,6 +20,12 @@ struct LoginView: View {
 
             }
 
+            Button {
+                RouteStore.shared.push(MainView())
+            } label: {
+                Text("push second")
+
+            }
         }
     }
 }

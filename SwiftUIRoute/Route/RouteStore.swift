@@ -31,7 +31,7 @@ final class RouteStore: NSObject, ObservableObject {
         return result
     }()
     
-    private(set) lazy var rootViewController: RouteNavigationController = {
+    private(set) lazy var main: RouteNavigationController =  {
         let page = MainView()
         let rootViewController = RouteViewController(
             route: page.route,
@@ -40,6 +40,11 @@ final class RouteStore: NSObject, ObservableObject {
         let result = RouteNavigationController(rootViewController: rootViewController)
         return result
     }()
+    
+    var rootViewController: RouteNavigationController {
+        window?.rootViewController as! RouteNavigationController
+    }
+    
 }
 
 

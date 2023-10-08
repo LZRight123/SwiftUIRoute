@@ -9,7 +9,7 @@ import SwiftUI
 
 extension RouteStore {
     func routeToMain() {
-        window?.rootViewController = rootViewController
-//        RouteStore.shared.present(LoginView(), modalStyle: .fullScreen, animated: false)
+        window?.rootViewController = main
+        RouteStore.shared.present(LoginView(), modal: .fullScreen, animated: false)
     }
 }
