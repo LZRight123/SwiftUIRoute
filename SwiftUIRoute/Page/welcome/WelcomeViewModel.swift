@@ -10,10 +10,11 @@ import Foundation
 class WelcomeViewModel: ObservableObject {
     
     init() {
-     
         Task {
-            await localDealy(dealy: 0)
+            LocalUserMananger.shared.commonInit()
+            await localDealy(dealy: 100)
             DispatchQueue.main.async {
+                ndlog(Thread.current)
                 RouteStore.shared.routeToMain()
             }
         }

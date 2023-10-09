@@ -44,7 +44,6 @@ final class RouteStore: NSObject, ObservableObject {
     var rootViewController: RouteNavigationController {
         window?.rootViewController as! RouteNavigationController
     }
-    
 }
 
 

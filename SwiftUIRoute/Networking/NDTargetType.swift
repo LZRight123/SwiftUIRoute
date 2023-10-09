@@ -59,35 +59,29 @@ extension NDTargetType {
         var headers: [String: String] = [:]
 
         // 常规信息
-        let standardHeader = [
-            "version": "1.",
-            "timestamp": Date().timeIntervalSince1970.string,
-            "device": UIDevice.current.name,
-            "os": UIDevice.current.systemVersion,
-            "model": UIDevice.current.localizedModel,
-            "DeviceToken": UserDefaults.standard.string(forKey: "DeviceToken")
-        ]
-        headers["standard-head"] = standardHeader.jsonString()
-        // 追踪 ID
-//        #if targetEnvironment(simulator)
-//            headers["token"] = "83f6223abbed5c02574490a5f2f64010"
-//        #else
-//            if !UserManager.shared.AccessToken.isEmpty {
-//                headers["token"] = UserManager.shared.AccessToken
-//            }
-//        #endif
-
+//        let standardHeader = [
+//            "version": "1.",
+//            "timestamp": Date().timeIntervalSince1970.string,
+//            "device": UIDevice.current.name,
+//            "os": UIDevice.current.systemVersion,
+//            "model": UIDevice.current.localizedModel,
+//            "DeviceToken": UserDefaults.standard.string(forKey: "DeviceToken")
+//        ]
+//        headers["standard-head"] = standardHeader.jsonString()
+        if !LocalUserMananger.shared.tokenModel.token.isEmpty {
+            headers["token"] = LocalUserMananger.shared.tokenModel.token
+        }
         // 设备信息
-        headers["device-type"] = UIDevice.current.model
-        headers["device-uuid"] = UIDevice.current.identifierForVendor?.uuidString ?? ""
-        headers["device-name"] = UIDevice.current.name
-        headers["device-system"] = UIDevice.current.systemName
-        headers["device-system-version"] = UIDevice.current.systemVersion
-
-        // App 信息
-        headers["app-version"] = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? ""
-        headers["app-build"] = Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? ""
-        headers["app-bundle-identifier"] = Bundle.main.bundleIdentifier ?? ""
+//        headers["device-type"] = UIDevice.current.model
+//        headers["device-uuid"] = UIDevice.current.identifierForVendor?.uuidString ?? ""
+//        headers["device-name"] = UIDevice.current.name
+//        headers["device-system"] = UIDevice.current.systemName
+//        headers["device-system-version"] = UIDevice.current.systemVersion
+//
+//        // App 信息
+//        headers["app-version"] = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? ""
+//        headers["app-build"] = Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? ""
+//        headers["app-bundle-identifier"] = Bundle.main.bundleIdentifier ?? ""
 
         return headers
     }

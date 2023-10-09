@@ -8,24 +8,58 @@
 import SwiftUI
 
 struct LoginView: View {
+    @StateObject var vm = LoginViewModel()
+    
     var body: some View {
-        VStack {
-            Color.gray.ignoresSafeArea(.all)
-            
-            
-            Button {
-                RouteStore.shared.pop()
-            } label: {
-                Text("login in")
-
+        NDScaffold(
+            isShowLoading: vm.isLoading,
+            topBar: nil
+        ) {
+            VStack(spacing: 24) {
+                TextField("输入手机号", text: $vm.phone)
+                    .ndNormal()
+                    .frame(maxWidth: .infinity, minHeight: 56)
+                    .ndunderline()
+                    .onChange(of: vm.phone) { newValue in
+                        vm.phone = String(newValue.prefix(11))
+                    }
+                
+                HStack(spacing: 10) {
+                    TextField("输入验证码", text: $vm.code)
+                        .ndNormal()
+                        .frame(maxWidth: .infinity)
+                        .onChange(of: vm.code) { newValue in
+                            vm.code = String(newValue.prefix(4))
+                        }
+                    
+                    Button {
+                        vm.sendCode()
+                    } label: {
+                        Text(
+                            vm.countDown == 0 ? "发送验证码" : "剩余\(vm.countDown)s"
+                        )
+                            .ndsmall()
+                    }
+                    .ndbuttonstyle(size: .small(), isLoading: vm.isSendCoding)
+                    .ndenabled(enabled: vm.countDown == 0 && vm.phone.count == 11)
+                    
+                }
+                .frame(minHeight: 56)
+                .ndunderline()
+                
+                Spacer()
+              
+                Button {
+                    vm.clickLogin()
+                } label: {
+                    Text("登录").ndlarge()
+                }
+                .ndbuttonstyle()
+                .ndenabled(enabled: vm.phone.count >= 11 && vm.code.count >= 4)
             }
-
-            Button {
-                RouteStore.shared.push(MainView())
-            } label: {
-                Text("push second")
-
-            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .padding(18)
+            .padding(.top, 100)
         }
     }
 }

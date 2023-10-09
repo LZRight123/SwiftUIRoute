@@ -39,3 +39,9 @@ enum TabBarType: CaseIterable {
         }
     }
 }
+
+enum UserStepIndex: Int, ConvertibleEnum {
+    case PetMatch = 1
+    case AdoptCompletion = 2 //领养成功
+    case Over = 3 // 点击了完成领养
+}

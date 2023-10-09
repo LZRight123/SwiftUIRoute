@@ -27,7 +27,6 @@ struct HomeView: View {
                 Button {
                     RouteStore.shared.present(PopView(pageType: .alert), modal: .custom, transition: FullscreenAnimatorDelegate.default)
                     Task {
-                        ToastView.appearance().bottomOffsetPortrait = UIScreen.main.bounds.height * 0.5
 
                         Toast(text: "123", duration: Delay.long).show()
                     }
@@ -54,6 +53,13 @@ struct HomeView: View {
                     Text("call api")
                         .foregroundColor(Color.red)
                 }
+                
+                Button {
+                    LocalUserMananger.shared.logout()
+                } label: {
+                    Text("logout").ndsmall()
+                }
+                .ndbuttonstyle(size: .small())
             }
         }
     }

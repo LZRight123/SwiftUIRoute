@@ -19,7 +19,7 @@ struct ProjectConfig {
     
     static var baseUrl: String {
         switch env {
-        case .test: return "https://app.naduo.love"
+        case .test: return "https://test.naduo.love"
         case .pro: return "https://app.naduo.love"
         }
     }

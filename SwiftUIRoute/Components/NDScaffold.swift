@@ -34,8 +34,8 @@ extension NDScaffold {
                     trailing: navBar,
                     content: {
                         Text(title)
-                            .ndfontSize(18, textColor: .f1)
-                            .bold()
+                            .ndfont(.title2, textColor: .f1)
+                            .fontWeight(.bold)
                     }
                 )
             },
@@ -55,7 +55,7 @@ struct NDScaffold<Content: View>: View {
     
     init(
         bacgroundColor: Color = .b2,
-        contentColor: Color = .red,
+        contentColor: Color = .f1,
         isShowLoading: Bool = false,
         topBar: (() -> any View)? = nil,
         bottomBar: (() -> any View)? = nil,

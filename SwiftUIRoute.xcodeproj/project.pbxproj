@@ -11,13 +11,29 @@
 		DF066B002AD2A2F70076B1C6 /* LocalUserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066AFF2AD2A2F70076B1C6 /* LocalUserManager.swift */; };
 		DF066B022AD2A37B0076B1C6 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B012AD2A37B0076B1C6 /* UserInfo.swift */; };
 		DF066B042AD2A4AB0076B1C6 /* Convertible+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B032AD2A4AB0076B1C6 /* Convertible+.swift */; };
+		DF066B062AD2A6190076B1C6 /* TokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B052AD2A6190076B1C6 /* TokenModel.swift */; };
+		DF066B082AD2A76F0076B1C6 /* StepModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B072AD2A76F0076B1C6 /* StepModel.swift */; };
+		DF066B0A2AD2AAB60076B1C6 /* CommonApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B092AD2AAB60076B1C6 /* CommonApi.swift */; };
+		DF066B0C2AD2AAC60076B1C6 /* LoginApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B0B2AD2AAC60076B1C6 /* LoginApi.swift */; };
+		DF066B0E2AD2AACF0076B1C6 /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B0D2AD2AACF0076B1C6 /* UserApi.swift */; };
+		DF066B102AD2AE5C0076B1C6 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B0F2AD2AE5C0076B1C6 /* LoginViewModel.swift */; };
+		DF066B122AD2AEFE0076B1C6 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B112AD2AEFE0076B1C6 /* BaseViewModel.swift */; };
+		DF066B162AD394D10076B1C6 /* NDTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B152AD394D10076B1C6 /* NDTheme.swift */; };
+		DF066B182AD3978A0076B1C6 /* Font+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B172AD3978A0076B1C6 /* Font+.swift */; };
+		DF066B1A2AD39F1D0076B1C6 /* TextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B192AD39F1D0076B1C6 /* TextField+.swift */; };
+		DF066B1C2AD3A26D0076B1C6 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B1B2AD3A26C0076B1C6 /* Styles.swift */; };
+		DF066B1E2AD3A56D0076B1C6 /* Button+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B1D2AD3A56D0076B1C6 /* Button+.swift */; };
+		DF066B212AD3BF710076B1C6 /* PerfectBaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B202AD3BF710076B1C6 /* PerfectBaseInfoView.swift */; };
+		DF066B252AD3C0760076B1C6 /* CharacterMatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B242AD3C0760076B1C6 /* CharacterMatchView.swift */; };
+		DF066B272AD3C0960076B1C6 /* PetAdoptCompletedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B262AD3C0960076B1C6 /* PetAdoptCompletedView.swift */; };
+		DF066B292AD3C0CE0076B1C6 /* ThirdSDKManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B282AD3C0CE0076B1C6 /* ThirdSDKManager.swift */; };
+		DF066B2B2AD3C30F0076B1C6 /* RouteStore+Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B2A2AD3C30F0076B1C6 /* RouteStore+Route.swift */; };
 		DF1F35522AC17FF9009147D3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1F35512AC17FF9009147D3 /* MainView.swift */; };
 		DF1F35572AC18075009147D3 /* AAEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1F35562AC18075009147D3 /* AAEnums.swift */; };
 		DF1F355A2AC1825F009147D3 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1F35592AC1825F009147D3 /* MainViewModel.swift */; };
 		DF1F355C2AC182B5009147D3 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1F355B2AC182B5009147D3 /* MainTabBar.swift */; };
 		DF1F35612AC18573009147D3 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1F35602AC18573009147D3 /* WelcomeView.swift */; };
 		DF1F35632AC185B8009147D3 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1F35622AC185B8009147D3 /* WelcomeViewModel.swift */; };
-		DF1F35662AC18B22009147D3 /* RouteStore+Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1F35652AC18B22009147D3 /* RouteStore+Route.swift */; };
 		DF1F35692AC18CD4009147D3 /* GlobalFuction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1F35682AC18CD4009147D3 /* GlobalFuction.swift */; };
 		DF1F356C2AC1908A009147D3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1F356B2AC1908A009147D3 /* LoginView.swift */; };
 		DF71968F2AA0702E0073F214 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF71968E2AA0702E0073F214 /* AppDelegate.swift */; };
@@ -90,13 +106,29 @@
 		DF066AFF2AD2A2F70076B1C6 /* LocalUserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalUserManager.swift; sourceTree = "<group>"; };
 		DF066B012AD2A37B0076B1C6 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		DF066B032AD2A4AB0076B1C6 /* Convertible+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Convertible+.swift"; sourceTree = "<group>"; };
+		DF066B052AD2A6190076B1C6 /* TokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenModel.swift; sourceTree = "<group>"; };
+		DF066B072AD2A76F0076B1C6 /* StepModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepModel.swift; sourceTree = "<group>"; };
+		DF066B092AD2AAB60076B1C6 /* CommonApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonApi.swift; sourceTree = "<group>"; };
+		DF066B0B2AD2AAC60076B1C6 /* LoginApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginApi.swift; sourceTree = "<group>"; };
+		DF066B0D2AD2AACF0076B1C6 /* UserApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
+		DF066B0F2AD2AE5C0076B1C6 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		DF066B112AD2AEFE0076B1C6 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		DF066B152AD394D10076B1C6 /* NDTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDTheme.swift; sourceTree = "<group>"; };
+		DF066B172AD3978A0076B1C6 /* Font+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+.swift"; sourceTree = "<group>"; };
+		DF066B192AD39F1D0076B1C6 /* TextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+.swift"; sourceTree = "<group>"; };
+		DF066B1B2AD3A26C0076B1C6 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		DF066B1D2AD3A56D0076B1C6 /* Button+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+.swift"; sourceTree = "<group>"; };
+		DF066B202AD3BF710076B1C6 /* PerfectBaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfectBaseInfoView.swift; sourceTree = "<group>"; };
+		DF066B242AD3C0760076B1C6 /* CharacterMatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterMatchView.swift; sourceTree = "<group>"; };
+		DF066B262AD3C0960076B1C6 /* PetAdoptCompletedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetAdoptCompletedView.swift; sourceTree = "<group>"; };
+		DF066B282AD3C0CE0076B1C6 /* ThirdSDKManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdSDKManager.swift; sourceTree = "<group>"; };
+		DF066B2A2AD3C30F0076B1C6 /* RouteStore+Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RouteStore+Route.swift"; sourceTree = "<group>"; };
 		DF1F35512AC17FF9009147D3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		DF1F35562AC18075009147D3 /* AAEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAEnums.swift; sourceTree = "<group>"; };
 		DF1F35592AC1825F009147D3 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		DF1F355B2AC182B5009147D3 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		DF1F35602AC18573009147D3 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		DF1F35622AC185B8009147D3 /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
-		DF1F35652AC18B22009147D3 /* RouteStore+Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RouteStore+Route.swift"; sourceTree = "<group>"; };
 		DF1F35682AC18CD4009147D3 /* GlobalFuction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFuction.swift; sourceTree = "<group>"; };
 		DF1F356B2AC1908A009147D3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		DF71968B2AA0702E0073F214 /* SwiftUIRoute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIRoute.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,12 +225,39 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DF066B1F2AD3BF5A0076B1C6 /* perfect */ = {
+			isa = PBXGroup;
+			children = (
+				DF066B232AD3C05C0076B1C6 /* adopt */,
+				DF066B222AD3C04A0076B1C6 /* petmatch */,
+				DF066B202AD3BF710076B1C6 /* PerfectBaseInfoView.swift */,
+			);
+			path = perfect;
+			sourceTree = "<group>";
+		};
+		DF066B222AD3C04A0076B1C6 /* petmatch */ = {
+			isa = PBXGroup;
+			children = (
+				DF066B242AD3C0760076B1C6 /* CharacterMatchView.swift */,
+			);
+			path = petmatch;
+			sourceTree = "<group>";
+		};
+		DF066B232AD3C05C0076B1C6 /* adopt */ = {
+			isa = PBXGroup;
+			children = (
+				DF066B262AD3C0960076B1C6 /* PetAdoptCompletedView.swift */,
+			);
+			path = adopt;
+			sourceTree = "<group>";
+		};
 		DF1F354C2AC17FB1009147D3 /* Page */ = {
 			isa = PBXGroup;
 			children = (
 				DF7D8B3E2AC3FF1B00FA0E01 /* test */,
 				DF7D8B302AC3BD9D00FA0E01 /* home */,
 				DF1F356A2AC1907B009147D3 /* login */,
+				DF066B1F2AD3BF5A0076B1C6 /* perfect */,
 				DF1F355F2AC1855E009147D3 /* welcome */,
 				DF1F35502AC17FEB009147D3 /* main */,
 			);
@@ -220,6 +279,8 @@
 			children = (
 				DF1F35562AC18075009147D3 /* AAEnums.swift */,
 				DF066B012AD2A37B0076B1C6 /* UserInfo.swift */,
+				DF066B052AD2A6190076B1C6 /* TokenModel.swift */,
+				DF066B072AD2A76F0076B1C6 /* StepModel.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -229,6 +290,8 @@
 			children = (
 				DF7D8B532AC413FA00FA0E01 /* ProjectConfig.swift */,
 				DF066AFF2AD2A2F70076B1C6 /* LocalUserManager.swift */,
+				DF066B112AD2AEFE0076B1C6 /* BaseViewModel.swift */,
+				DF066B282AD3C0CE0076B1C6 /* ThirdSDKManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -245,6 +308,7 @@
 				DF8C8F1C2AC54E9700DF8895 /* NDLottieView.swift */,
 				DF8C8F122AC5186200DF8895 /* NDScaffold.swift */,
 				DF8C8F422AC55B9800DF8895 /* NDLoaddingView.swift */,
+				DF066B152AD394D10076B1C6 /* NDTheme.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -278,6 +342,7 @@
 			isa = PBXGroup;
 			children = (
 				DF1F356B2AC1908A009147D3 /* LoginView.swift */,
+				DF066B0F2AD2AE5C0076B1C6 /* LoginViewModel.swift */,
 			);
 			path = login;
 			sourceTree = "<group>";
@@ -329,7 +394,7 @@
 				DF7196A32AA0728B0073F214 /* Base */,
 				DF7196AC2AA073A90073F214 /* Route.swift */,
 				DF7196B22AA074D00073F214 /* RouteStore.swift */,
-				DF1F35652AC18B22009147D3 /* RouteStore+Route.swift */,
+				DF066B2A2AD3C30F0076B1C6 /* RouteStore+Route.swift */,
 				DF7196B02AA074490073F214 /* Route+Page.swift */,
 			);
 			path = Route;
@@ -393,6 +458,10 @@
 				DF7D8B4B2AC412E100FA0E01 /* Text+.swift */,
 				DF7D8B4F2AC4136E00FA0E01 /* View+.swift */,
 				DF066B032AD2A4AB0076B1C6 /* Convertible+.swift */,
+				DF066B172AD3978A0076B1C6 /* Font+.swift */,
+				DF066B192AD39F1D0076B1C6 /* TextField+.swift */,
+				DF066B1B2AD3A26C0076B1C6 /* Styles.swift */,
+				DF066B1D2AD3A56D0076B1C6 /* Button+.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -431,6 +500,9 @@
 			isa = PBXGroup;
 			children = (
 				DF815D772AC4404C008DB6DC /* TestApi.swift */,
+				DF066B092AD2AAB60076B1C6 /* CommonApi.swift */,
+				DF066B0B2AD2AAC60076B1C6 /* LoginApi.swift */,
+				DF066B0D2AD2AACF0076B1C6 /* UserApi.swift */,
 			);
 			path = Apis;
 			sourceTree = "<group>";
@@ -639,34 +711,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF066B252AD3C0760076B1C6 /* CharacterMatchView.swift in Sources */,
 				DF1F355C2AC182B5009147D3 /* MainTabBar.swift in Sources */,
 				DF7D8B3D2AC3FB9700FA0E01 /* BaseAnimatorDelegate.swift in Sources */,
+				DF066B122AD2AEFE0076B1C6 /* BaseViewModel.swift in Sources */,
 				DF7D8B392AC3F4D700FA0E01 /* FullscreenAnimatorDelegate.swift in Sources */,
+				DF066B0A2AD2AAB60076B1C6 /* CommonApi.swift in Sources */,
 				DF7196A52AA072A40073F214 /* RouteNavigationController.swift in Sources */,
 				DF8C8F452AC5602400DF8895 /* NDToast.swift in Sources */,
 				DF1F35572AC18075009147D3 /* AAEnums.swift in Sources */,
+				DF066B272AD3C0960076B1C6 /* PetAdoptCompletedView.swift in Sources */,
 				DF7D8B452AC40C7A00FA0E01 /* BarBackgorundView.swift in Sources */,
+				DF066B102AD2AE5C0076B1C6 /* LoginViewModel.swift in Sources */,
 				DF8C8F432AC55B9800DF8895 /* NDLoaddingView.swift in Sources */,
 				DF815D7A2AC44DBA008DB6DC /* NDProgress.swift in Sources */,
 				DFD766292AA983C300233310 /* SwiftUIAndModifier.swift in Sources */,
+				DF066B2B2AD3C30F0076B1C6 /* RouteStore+Route.swift in Sources */,
 				DF7196BB2AA07FCD0073F214 /* View+Route.swift in Sources */,
 				DF8C8F152AC5230500DF8895 /* NDNavBar.swift in Sources */,
 				DF7D8B322AC3BDAA00FA0E01 /* HomeView.swift in Sources */,
 				DFD7662B2AA9A0D900233310 /* ScrollViewContentOffset.swift in Sources */,
-				DF1F35662AC18B22009147D3 /* RouteStore+Route.swift in Sources */,
 				DF7196A92AA072C00073F214 /* RouteViewController.swift in Sources */,
 				DF815D732AC43A65008DB6DC /* MoyaResult+Extension.swift in Sources */,
 				DF71968F2AA0702E0073F214 /* AppDelegate.swift in Sources */,
 				DF1F35692AC18CD4009147D3 /* GlobalFuction.swift in Sources */,
 				DF7D8B362AC3DECB00FA0E01 /* RouteViewController+CustomSheetable.swift in Sources */,
+				DF066B212AD3BF710076B1C6 /* PerfectBaseInfoView.swift in Sources */,
 				DF1F355A2AC1825F009147D3 /* MainViewModel.swift in Sources */,
 				DF7D8B432AC4089500FA0E01 /* NavBarViewModifier.swift in Sources */,
 				DF815D782AC4404C008DB6DC /* TestApi.swift in Sources */,
+				DF066B062AD2A6190076B1C6 /* TokenModel.swift in Sources */,
+				DF066B1E2AD3A56D0076B1C6 /* Button+.swift in Sources */,
 				DF815D6D2AC4394A008DB6DC /* NetworkPopPlugin.swift in Sources */,
 				DF7196B32AA074D00073F214 /* RouteStore.swift in Sources */,
 				DF7196AD2AA073A90073F214 /* Route.swift in Sources */,
 				DF8C8F172AC5273700DF8895 /* NDBottomBar.swift in Sources */,
 				DF815D692AC43889008DB6DC /* Networking.swift in Sources */,
+				DF066B1A2AD39F1D0076B1C6 /* TextField+.swift in Sources */,
+				DF066B0C2AD2AAC60076B1C6 /* LoginApi.swift in Sources */,
 				DF7D8B542AC413FA00FA0E01 /* ProjectConfig.swift in Sources */,
 				DF7196B12AA074490073F214 /* Route+Page.swift in Sources */,
 				DF7196B92AA076900073F214 /* UIViewController+Route.swift in Sources */,
@@ -674,6 +756,7 @@
 				DF7D8B522AC413C300FA0E01 /* BlurView.swift in Sources */,
 				DF815D672AC4325F008DB6DC /* NDTargetType.swift in Sources */,
 				DF066B002AD2A2F70076B1C6 /* LocalUserManager.swift in Sources */,
+				DF066B182AD3978A0076B1C6 /* Font+.swift in Sources */,
 				DF7D8B502AC4136E00FA0E01 /* View+.swift in Sources */,
 				DF7D8B4C2AC412E100FA0E01 /* Text+.swift in Sources */,
 				DF7196912AA0702E0073F214 /* SceneDelegate.swift in Sources */,
@@ -681,6 +764,8 @@
 				DF7D8B3B2AC3F6F700FA0E01 /* PresentationBackgroudController.swift in Sources */,
 				DF8C8F1D2AC54E9800DF8895 /* NDLottieView.swift in Sources */,
 				DF7196A72AA072B30073F214 /* RouteSplitViewController.swift in Sources */,
+				DF066B162AD394D10076B1C6 /* NDTheme.swift in Sources */,
+				DF066B0E2AD2AACF0076B1C6 /* UserApi.swift in Sources */,
 				DF7D8B4E2AC4132D00FA0E01 /* Shape+.swift in Sources */,
 				DF1F35522AC17FF9009147D3 /* MainView.swift in Sources */,
 				DF066B022AD2A37B0076B1C6 /* UserInfo.swift in Sources */,
@@ -692,7 +777,10 @@
 				DF815D6E2AC4394A008DB6DC /* NetworkLoggerPlugin.swift in Sources */,
 				DF1F35632AC185B8009147D3 /* WelcomeViewModel.swift in Sources */,
 				DF1F35612AC18573009147D3 /* WelcomeView.swift in Sources */,
+				DF066B292AD3C0CE0076B1C6 /* ThirdSDKManager.swift in Sources */,
 				DF815D712AC43A46008DB6DC /* MoyaProviderType+Extension.swift in Sources */,
+				DF066B082AD2A76F0076B1C6 /* StepModel.swift in Sources */,
+				DF066B1C2AD3A26D0076B1C6 /* Styles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

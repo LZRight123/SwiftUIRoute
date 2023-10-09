@@ -12,7 +12,9 @@ extension Route {
         case welcome
         case main
         case login
-        
+        case perfectBaseInfo
+        case charachterMatch
+        case petAdoptcompleted
         // PanModal
         case sheet
         // FullscreenAnimator
