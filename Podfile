@@ -20,6 +20,9 @@ target 'SwiftUIRoute' do
   pod 'lottie-ios'# JSON动画
   pod 'Toaster' # https://github.com/devxoul/Toaster
 
+  pod 'ZLPhotoBrowser'
+  pod "Qiniu", "~> 8.4.1"
+
 end
 
 post_install do |installer|

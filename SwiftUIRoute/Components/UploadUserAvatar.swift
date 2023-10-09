@@ -6,29 +6,45 @@
 //
 
 import SwiftUI
+import ZLPhotoBrowser
 
 struct UploadUserAvatar: View {
     let model: Any?
     let size: CGFloat
+    let onClick: () -> Void
     
-    init(model: Any?, size: CGFloat = 100) {
+    init(model: Any?, size: CGFloat = 100, onClick: @escaping () -> Void = {}) {
         self.model = model
         self.size = size
+        self.onClick = onClick
     }
     
     var body: some View {
         Button {
-            
+            onClick()
         } label: {
             Group {
-                if let url = model as? UIImage {
-                    Color.b3.ndsize(size)
+                if let image = model as? UIImage {
+                    Image(uiImage: image)
+                        .resizable()
+                        .ndsize(size)
                         .clipShape(Circle())
                 } else {
                     UserAvatar(url: model as? String, size: size)
                 }
             }
-            .overlay(
+            .modifier(UploadUserAvatarModifier(showCamera: true))
+            
+        }
+//        .ndbuttonstyleclear()
+    }
+}
+
+private struct UploadUserAvatarModifier : ViewModifier {
+    let showCamera: Bool
+    func body(content: Content) -> some View {
+        if showCamera {
+            content.overlay(
                 ZStack {
                     Image("camera")
                         .resizable()
@@ -40,8 +56,9 @@ struct UploadUserAvatar: View {
                     .clipShape(Circle()),
                 alignment: .bottomTrailing
             )
+        } else {
+            content
         }
-//        .ndbuttonstyleclear()
     }
 }
 

@@ -30,6 +30,12 @@
 		DF066B2B2AD3C30F0076B1C6 /* RouteStore+Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B2A2AD3C30F0076B1C6 /* RouteStore+Route.swift */; };
 		DF066B2D2AD3CDF10076B1C6 /* UserAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B2C2AD3CDF10076B1C6 /* UserAvatar.swift */; };
 		DF066B312AD3D5E30076B1C6 /* UploadUserAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B302AD3D5E30076B1C6 /* UploadUserAvatar.swift */; };
+		DF066B332AD3E1620076B1C6 /* PerfectBaseInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B322AD3E1620076B1C6 /* PerfectBaseInfoViewModel.swift */; };
+		DF066B352AD3E42C0076B1C6 /* OSSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B342AD3E42B0076B1C6 /* OSSManager.swift */; };
+		DF066B382AD3E8810076B1C6 /* NDListPickerSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B372AD3E8810076B1C6 /* NDListPickerSheet.swift */; };
+		DF066B3A2AD3EEA30076B1C6 /* NDBottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B392AD3EEA30076B1C6 /* NDBottomSheetView.swift */; };
+		DF066B3C2AD3F0120076B1C6 /* NDBottomSheetCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B3B2AD3F0120076B1C6 /* NDBottomSheetCard.swift */; };
+		DF066B3E2AD3F1DC0076B1C6 /* NDBottomSheetItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B3D2AD3F1DC0076B1C6 /* NDBottomSheetItem.swift */; };
 		DF1F35522AC17FF9009147D3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1F35512AC17FF9009147D3 /* MainView.swift */; };
 		DF1F35572AC18075009147D3 /* AAEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1F35562AC18075009147D3 /* AAEnums.swift */; };
 		DF1F355A2AC1825F009147D3 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1F35592AC1825F009147D3 /* MainViewModel.swift */; };
@@ -127,6 +133,12 @@
 		DF066B2A2AD3C30F0076B1C6 /* RouteStore+Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RouteStore+Route.swift"; sourceTree = "<group>"; };
 		DF066B2C2AD3CDF10076B1C6 /* UserAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAvatar.swift; sourceTree = "<group>"; };
 		DF066B302AD3D5E30076B1C6 /* UploadUserAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadUserAvatar.swift; sourceTree = "<group>"; };
+		DF066B322AD3E1620076B1C6 /* PerfectBaseInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfectBaseInfoViewModel.swift; sourceTree = "<group>"; };
+		DF066B342AD3E42B0076B1C6 /* OSSManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSSManager.swift; sourceTree = "<group>"; };
+		DF066B372AD3E8810076B1C6 /* NDListPickerSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDListPickerSheet.swift; sourceTree = "<group>"; };
+		DF066B392AD3EEA30076B1C6 /* NDBottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDBottomSheetView.swift; sourceTree = "<group>"; };
+		DF066B3B2AD3F0120076B1C6 /* NDBottomSheetCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDBottomSheetCard.swift; sourceTree = "<group>"; };
+		DF066B3D2AD3F1DC0076B1C6 /* NDBottomSheetItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDBottomSheetItem.swift; sourceTree = "<group>"; };
 		DF1F35512AC17FF9009147D3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		DF1F35562AC18075009147D3 /* AAEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAEnums.swift; sourceTree = "<group>"; };
 		DF1F35592AC1825F009147D3 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
@@ -235,6 +247,7 @@
 				DF066B232AD3C05C0076B1C6 /* adopt */,
 				DF066B222AD3C04A0076B1C6 /* petmatch */,
 				DF066B202AD3BF710076B1C6 /* PerfectBaseInfoView.swift */,
+				DF066B322AD3E1620076B1C6 /* PerfectBaseInfoViewModel.swift */,
 			);
 			path = perfect;
 			sourceTree = "<group>";
@@ -253,6 +266,16 @@
 				DF066B262AD3C0960076B1C6 /* PetAdoptCompletedView.swift */,
 			);
 			path = adopt;
+			sourceTree = "<group>";
+		};
+		DF066B362AD3E8630076B1C6 /* picker */ = {
+			isa = PBXGroup;
+			children = (
+				DF066B3B2AD3F0120076B1C6 /* NDBottomSheetCard.swift */,
+				DF066B3D2AD3F1DC0076B1C6 /* NDBottomSheetItem.swift */,
+				DF066B372AD3E8810076B1C6 /* NDListPickerSheet.swift */,
+			);
+			path = picker;
 			sourceTree = "<group>";
 		};
 		DF1F354C2AC17FB1009147D3 /* Page */ = {
@@ -296,6 +319,7 @@
 				DF066AFF2AD2A2F70076B1C6 /* LocalUserManager.swift */,
 				DF066B112AD2AEFE0076B1C6 /* BaseViewModel.swift */,
 				DF066B282AD3C0CE0076B1C6 /* ThirdSDKManager.swift */,
+				DF066B342AD3E42B0076B1C6 /* OSSManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -305,6 +329,7 @@
 			children = (
 				DF7D8B482AC4107000FA0E01 /* extension */,
 				DF7D8B412AC4087E00FA0E01 /* bar */,
+				DF066B362AD3E8630076B1C6 /* picker */,
 				DF7D8B512AC413C300FA0E01 /* BlurView.swift */,
 				DF815D792AC44DBA008DB6DC /* NDProgress.swift */,
 				DF8C8F442AC5602400DF8895 /* NDToast.swift */,
@@ -312,6 +337,7 @@
 				DF8C8F122AC5186200DF8895 /* NDScaffold.swift */,
 				DF8C8F422AC55B9800DF8895 /* NDLoaddingView.swift */,
 				DF066B152AD394D10076B1C6 /* NDTheme.swift */,
+				DF066B392AD3EEA30076B1C6 /* NDBottomSheetView.swift */,
 				DF066B2C2AD3CDF10076B1C6 /* UserAvatar.swift */,
 				DF066B302AD3D5E30076B1C6 /* UploadUserAvatar.swift */,
 			);
@@ -721,6 +747,7 @@
 				DF1F355C2AC182B5009147D3 /* MainTabBar.swift in Sources */,
 				DF7D8B3D2AC3FB9700FA0E01 /* BaseAnimatorDelegate.swift in Sources */,
 				DF066B122AD2AEFE0076B1C6 /* BaseViewModel.swift in Sources */,
+				DF066B352AD3E42C0076B1C6 /* OSSManager.swift in Sources */,
 				DF7D8B392AC3F4D700FA0E01 /* FullscreenAnimatorDelegate.swift in Sources */,
 				DF066B0A2AD2AAB60076B1C6 /* CommonApi.swift in Sources */,
 				DF7196A52AA072A40073F214 /* RouteNavigationController.swift in Sources */,
@@ -740,6 +767,7 @@
 				DF7196A92AA072C00073F214 /* RouteViewController.swift in Sources */,
 				DF815D732AC43A65008DB6DC /* MoyaResult+Extension.swift in Sources */,
 				DF71968F2AA0702E0073F214 /* AppDelegate.swift in Sources */,
+				DF066B3A2AD3EEA30076B1C6 /* NDBottomSheetView.swift in Sources */,
 				DF1F35692AC18CD4009147D3 /* GlobalFuction.swift in Sources */,
 				DF066B2D2AD3CDF10076B1C6 /* UserAvatar.swift in Sources */,
 				DF7D8B362AC3DECB00FA0E01 /* RouteViewController+CustomSheetable.swift in Sources */,
@@ -750,6 +778,7 @@
 				DF066B062AD2A6190076B1C6 /* TokenModel.swift in Sources */,
 				DF066B1E2AD3A56D0076B1C6 /* Button+.swift in Sources */,
 				DF815D6D2AC4394A008DB6DC /* NetworkPopPlugin.swift in Sources */,
+				DF066B3C2AD3F0120076B1C6 /* NDBottomSheetCard.swift in Sources */,
 				DF7196B32AA074D00073F214 /* RouteStore.swift in Sources */,
 				DF7196AD2AA073A90073F214 /* Route.swift in Sources */,
 				DF8C8F172AC5273700DF8895 /* NDBottomBar.swift in Sources */,
@@ -763,6 +792,7 @@
 				DF7D8B522AC413C300FA0E01 /* BlurView.swift in Sources */,
 				DF815D672AC4325F008DB6DC /* NDTargetType.swift in Sources */,
 				DF066B002AD2A2F70076B1C6 /* LocalUserManager.swift in Sources */,
+				DF066B3E2AD3F1DC0076B1C6 /* NDBottomSheetItem.swift in Sources */,
 				DF066B182AD3978A0076B1C6 /* Font+.swift in Sources */,
 				DF7D8B502AC4136E00FA0E01 /* View+.swift in Sources */,
 				DF7D8B4C2AC412E100FA0E01 /* Text+.swift in Sources */,
@@ -783,6 +813,8 @@
 				DF815D752AC43B1C008DB6DC /* Response+Extension.swift in Sources */,
 				DF066B042AD2A4AB0076B1C6 /* Convertible+.swift in Sources */,
 				DF815D6E2AC4394A008DB6DC /* NetworkLoggerPlugin.swift in Sources */,
+				DF066B382AD3E8810076B1C6 /* NDListPickerSheet.swift in Sources */,
+				DF066B332AD3E1620076B1C6 /* PerfectBaseInfoViewModel.swift in Sources */,
 				DF1F35632AC185B8009147D3 /* WelcomeViewModel.swift in Sources */,
 				DF1F35612AC18573009147D3 /* WelcomeView.swift in Sources */,
 				DF066B292AD3C0CE0076B1C6 /* ThirdSDKManager.swift in Sources */,

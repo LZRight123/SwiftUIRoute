@@ -45,3 +45,14 @@ enum UserStepIndex: Int, ConvertibleEnum {
     case AdoptCompletion = 2 //领养成功
     case Over = 3 // 点击了完成领养
 }
+
+enum GenderType: Int, CaseIterable {
+    case female = 0 //女
+    case male = 1 //男
+    var title: String {
+        switch self {
+        case .female: return "女"
+        case .male: return "男"
+        }
+    }
+}

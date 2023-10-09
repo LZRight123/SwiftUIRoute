@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.8.0)
+  - HappyDNS (1.0.3)
   - KakaJSON (1.1.2)
   - Kingfisher (7.9.1)
   - lottie-ios (4.3.2)
@@ -8,12 +9,17 @@ PODS:
   - Moya/Core (15.0.0):
     - Alamofire (~> 5.0)
   - PanModal (1.2.7)
+  - Qiniu (8.4.4):
+    - HappyDNS (~> 1.0.2)
   - SwifterSwift/Dispatch (5.2.0)
   - SwifterSwift/Foundation (5.2.0)
   - SwifterSwift/SwiftStdlib (5.2.0)
   - SwiftUIIntrospect (1.0.0)
   - SwiftyJSON (4.3.0)
   - Toaster (2.3.0)
+  - ZLPhotoBrowser (4.4.5):
+    - ZLPhotoBrowser/Core (= 4.4.5)
+  - ZLPhotoBrowser/Core (4.4.5)
 
 DEPENDENCIES:
   - KakaJSON (~> 1.1.2)
@@ -21,38 +27,46 @@ DEPENDENCIES:
   - lottie-ios
   - Moya (~> 15.0)
   - PanModal
+  - Qiniu (~> 8.4.1)
   - SwifterSwift/Dispatch
   - SwifterSwift/Foundation
   - SwifterSwift/SwiftStdlib
   - SwiftUIIntrospect (~> 1.0)
   - SwiftyJSON (~> 4.0)
   - Toaster
+  - ZLPhotoBrowser
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - HappyDNS
     - KakaJSON
     - Kingfisher
     - lottie-ios
     - Moya
     - PanModal
+    - Qiniu
     - SwifterSwift
     - SwiftUIIntrospect
     - SwiftyJSON
     - Toaster
+    - ZLPhotoBrowser
 
 SPEC CHECKSUMS:
   Alamofire: 0e92e751b3e9e66d7982db43919d01f313b8eb91
+  HappyDNS: 5421fc84775a299517e994afadb9e732b265ec65
   KakaJSON: cc5ff50a8c1cfbb09413db8496cb709a209e6137
   Kingfisher: 1d14e9f59cbe19389f591c929000332bf70efd32
   lottie-ios: 48af491639ba6e8bb7cfaf7649b8a339487da935
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   PanModal: 3e16ead1a907fb06f4df3f13492fd00149fa4974
+  Qiniu: 60ba88dadb712bcf1fb2d5e50c037b073ab7df2a
   SwifterSwift: 334181863c416882d97b7a60c05054d9e4d799e2
   SwiftUIIntrospect: 9f15bf51d1a7582e168a683debca38649f3e152e
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
   Toaster: c3473963c78e8cabbf6ea6f11ad0fdaae6f54987
+  ZLPhotoBrowser: c517bd5ca32909ba67b02b99a558ab90756a8448
 
-PODFILE CHECKSUM: 384fcfe549f40923ab1051ead639b704e61d5acc
+PODFILE CHECKSUM: ab38d2d2c808ae283ae7c8a1f819c1a757f94720
 
 COCOAPODS: 1.12.1
