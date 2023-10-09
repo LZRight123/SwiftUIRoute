@@ -38,24 +38,24 @@ struct LoginView: View {
                         Text(
                             vm.countDown == 0 ? "发送验证码" : "剩余\(vm.countDown)s"
                         )
-                            .ndsmall()
+                        .ndsmall()
                     }
-                    .ndbuttonstyle(size: .small(), isLoading: vm.isSendCoding)
-                    .ndenabled(enabled: vm.countDown == 0 && vm.phone.count == 11)
+                    .ndbuttonstyle(.small(), isLoading: vm.isSendCoding)
+                    .ndenabled( vm.countDown == 0 && vm.phone.count == 11)
                     
                 }
                 .frame(minHeight: 56)
                 .ndunderline()
                 
                 Spacer()
-              
+                
                 Button {
                     vm.clickLogin()
                 } label: {
                     Text("登录").ndlarge()
                 }
                 .ndbuttonstyle()
-                .ndenabled(enabled: vm.phone.count >= 11 && vm.code.count >= 4)
+                .ndenabled(vm.phone.count >= 11 && vm.code.count >= 4)
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .padding(18)

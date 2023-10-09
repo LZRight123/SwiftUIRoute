@@ -16,3 +16,11 @@ func ndlog(_ items: Any...) {
     print(items)
     #endif
 }
+
+
+let screen_width = UIScreen.main.bounds.width
+let screen_height = UIScreen.main.bounds.height
+func mockImage() -> String {
+    let int =  Int.random(in: 180...200)
+    return  "https://picsum.photos/\(int)/\(int)"
+}

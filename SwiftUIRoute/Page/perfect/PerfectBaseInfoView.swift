@@ -19,6 +19,7 @@ struct PerfectBaseInfoView: View {
             }
         ) {
             VStack {
+                UploadUserAvatar(model: mockImage())
                 Text("123")
                     .ndfont(.body1, textColor: .f1)
             }

@@ -28,6 +28,8 @@
 		DF066B272AD3C0960076B1C6 /* PetAdoptCompletedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B262AD3C0960076B1C6 /* PetAdoptCompletedView.swift */; };
 		DF066B292AD3C0CE0076B1C6 /* ThirdSDKManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B282AD3C0CE0076B1C6 /* ThirdSDKManager.swift */; };
 		DF066B2B2AD3C30F0076B1C6 /* RouteStore+Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B2A2AD3C30F0076B1C6 /* RouteStore+Route.swift */; };
+		DF066B2D2AD3CDF10076B1C6 /* UserAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B2C2AD3CDF10076B1C6 /* UserAvatar.swift */; };
+		DF066B312AD3D5E30076B1C6 /* UploadUserAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B302AD3D5E30076B1C6 /* UploadUserAvatar.swift */; };
 		DF1F35522AC17FF9009147D3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1F35512AC17FF9009147D3 /* MainView.swift */; };
 		DF1F35572AC18075009147D3 /* AAEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1F35562AC18075009147D3 /* AAEnums.swift */; };
 		DF1F355A2AC1825F009147D3 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1F35592AC1825F009147D3 /* MainViewModel.swift */; };
@@ -123,6 +125,8 @@
 		DF066B262AD3C0960076B1C6 /* PetAdoptCompletedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetAdoptCompletedView.swift; sourceTree = "<group>"; };
 		DF066B282AD3C0CE0076B1C6 /* ThirdSDKManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdSDKManager.swift; sourceTree = "<group>"; };
 		DF066B2A2AD3C30F0076B1C6 /* RouteStore+Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RouteStore+Route.swift"; sourceTree = "<group>"; };
+		DF066B2C2AD3CDF10076B1C6 /* UserAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAvatar.swift; sourceTree = "<group>"; };
+		DF066B302AD3D5E30076B1C6 /* UploadUserAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadUserAvatar.swift; sourceTree = "<group>"; };
 		DF1F35512AC17FF9009147D3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		DF1F35562AC18075009147D3 /* AAEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAEnums.swift; sourceTree = "<group>"; };
 		DF1F35592AC1825F009147D3 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
@@ -301,7 +305,6 @@
 			children = (
 				DF7D8B482AC4107000FA0E01 /* extension */,
 				DF7D8B412AC4087E00FA0E01 /* bar */,
-				DF7D8B4D2AC4132D00FA0E01 /* Shape+.swift */,
 				DF7D8B512AC413C300FA0E01 /* BlurView.swift */,
 				DF815D792AC44DBA008DB6DC /* NDProgress.swift */,
 				DF8C8F442AC5602400DF8895 /* NDToast.swift */,
@@ -309,6 +312,8 @@
 				DF8C8F122AC5186200DF8895 /* NDScaffold.swift */,
 				DF8C8F422AC55B9800DF8895 /* NDLoaddingView.swift */,
 				DF066B152AD394D10076B1C6 /* NDTheme.swift */,
+				DF066B2C2AD3CDF10076B1C6 /* UserAvatar.swift */,
+				DF066B302AD3D5E30076B1C6 /* UploadUserAvatar.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -461,6 +466,7 @@
 				DF066B172AD3978A0076B1C6 /* Font+.swift */,
 				DF066B192AD39F1D0076B1C6 /* TextField+.swift */,
 				DF066B1B2AD3A26C0076B1C6 /* Styles.swift */,
+				DF7D8B4D2AC4132D00FA0E01 /* Shape+.swift */,
 				DF066B1D2AD3A56D0076B1C6 /* Button+.swift */,
 			);
 			path = extension;
@@ -735,6 +741,7 @@
 				DF815D732AC43A65008DB6DC /* MoyaResult+Extension.swift in Sources */,
 				DF71968F2AA0702E0073F214 /* AppDelegate.swift in Sources */,
 				DF1F35692AC18CD4009147D3 /* GlobalFuction.swift in Sources */,
+				DF066B2D2AD3CDF10076B1C6 /* UserAvatar.swift in Sources */,
 				DF7D8B362AC3DECB00FA0E01 /* RouteViewController+CustomSheetable.swift in Sources */,
 				DF066B212AD3BF710076B1C6 /* PerfectBaseInfoView.swift in Sources */,
 				DF1F355A2AC1825F009147D3 /* MainViewModel.swift in Sources */,
@@ -762,6 +769,7 @@
 				DF7196912AA0702E0073F214 /* SceneDelegate.swift in Sources */,
 				DF8C8F132AC5186200DF8895 /* NDScaffold.swift in Sources */,
 				DF7D8B3B2AC3F6F700FA0E01 /* PresentationBackgroudController.swift in Sources */,
+				DF066B312AD3D5E30076B1C6 /* UploadUserAvatar.swift in Sources */,
 				DF8C8F1D2AC54E9800DF8895 /* NDLottieView.swift in Sources */,
 				DF7196A72AA072B30073F214 /* RouteSplitViewController.swift in Sources */,
 				DF066B162AD394D10076B1C6 /* NDTheme.swift in Sources */,

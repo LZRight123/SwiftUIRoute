@@ -21,7 +21,6 @@ class LoginViewModel: BaseViewModel {
             guard let self = self else { return }
             self.isSendCoding = false
             if result.isSuccess {
-                NDToast.show(text: result.message)
                 self.beginCountDown()
             } else {
                 NDToast.show(text: result.message)

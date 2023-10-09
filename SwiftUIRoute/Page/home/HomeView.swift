@@ -59,7 +59,7 @@ struct HomeView: View {
                 } label: {
                     Text("logout").ndsmall()
                 }
-                .ndbuttonstyle(size: .small())
+                .ndbuttonstyle( .small())
             }
         }
     }

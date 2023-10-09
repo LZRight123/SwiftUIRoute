@@ -41,6 +41,12 @@ struct NDButtonStyle: ButtonStyle {
     }
 }
 
+struct NDButtonClearStyle: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+    }
+}
+
 private struct NDButtonSizeViewModifier: ViewModifier {
     let size: NDButtonSize
     func body(content: Content) -> some View {
