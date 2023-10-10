@@ -27,8 +27,8 @@ extension NDScaffold {
                         Button {
                             RouteStore.shared.pop()
                         } label: {
-                            Text("返回")
-                            Image(systemName: "back")
+                            Image("chevrondown")
+                                .rotationEffect(.init(degrees: 90))
                         }
                     },
                     trailing: navBar,

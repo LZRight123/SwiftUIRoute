@@ -56,3 +56,11 @@ enum GenderType: Int, CaseIterable {
         }
     }
 }
+
+
+/**
+ * category 类型
+ */
+enum CategoryType: Int, ConvertibleEnum {
+    case pet =  1
+}

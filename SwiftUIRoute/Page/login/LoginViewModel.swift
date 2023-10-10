@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 class LoginViewModel: BaseViewModel {
-    @Published var phone = "15271327768"
+    @Published var phone = "15271327769"
     @Published var code = "1234"
     @Published var countDown = 0
     private var timer: AnyCancellable?

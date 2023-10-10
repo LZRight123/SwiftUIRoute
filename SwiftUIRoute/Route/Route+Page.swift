@@ -15,6 +15,7 @@ extension Route {
         case perfectBaseInfo
         case charachterMatch
         case petAdoptcompleted
+        case petRecommend
         // PanModal
         case sheet
         // FullscreenAnimator

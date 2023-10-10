@@ -27,7 +27,7 @@
 		DF066B252AD3C0760076B1C6 /* CharacterMatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B242AD3C0760076B1C6 /* CharacterMatchView.swift */; };
 		DF066B272AD3C0960076B1C6 /* PetAdoptCompletedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B262AD3C0960076B1C6 /* PetAdoptCompletedView.swift */; };
 		DF066B292AD3C0CE0076B1C6 /* ThirdSDKManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B282AD3C0CE0076B1C6 /* ThirdSDKManager.swift */; };
-		DF066B2B2AD3C30F0076B1C6 /* RouteStore+Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B2A2AD3C30F0076B1C6 /* RouteStore+Route.swift */; };
+		DF066B2B2AD3C30F0076B1C6 /* RouteStore+Helps.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B2A2AD3C30F0076B1C6 /* RouteStore+Helps.swift */; };
 		DF066B2D2AD3CDF10076B1C6 /* UserAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B2C2AD3CDF10076B1C6 /* UserAvatar.swift */; };
 		DF066B312AD3D5E30076B1C6 /* UploadUserAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B302AD3D5E30076B1C6 /* UploadUserAvatar.swift */; };
 		DF066B332AD3E1620076B1C6 /* PerfectBaseInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B322AD3E1620076B1C6 /* PerfectBaseInfoViewModel.swift */; };
@@ -36,6 +36,20 @@
 		DF066B3A2AD3EEA30076B1C6 /* NDBottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B392AD3EEA30076B1C6 /* NDBottomSheetView.swift */; };
 		DF066B3C2AD3F0120076B1C6 /* NDBottomSheetCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B3B2AD3F0120076B1C6 /* NDBottomSheetCard.swift */; };
 		DF066B3E2AD3F1DC0076B1C6 /* NDBottomSheetItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B3D2AD3F1DC0076B1C6 /* NDBottomSheetItem.swift */; };
+		DF066B402AD4E8FA0076B1C6 /* GlobalDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B3F2AD4E8FA0076B1C6 /* GlobalDataStore.swift */; };
+		DF066B422AD4F0180076B1C6 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B412AD4F0180076B1C6 /* String+.swift */; };
+		DF066B442AD4F5C00076B1C6 /* PetApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B432AD4F5C00076B1C6 /* PetApi.swift */; };
+		DF066B462AD4FAEA0076B1C6 /* PetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B452AD4FAEA0076B1C6 /* PetModel.swift */; };
+		DF066B482AD539880076B1C6 /* PetRecommendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B472AD539880076B1C6 /* PetRecommendView.swift */; };
+		DF066B4A2AD53BEA0076B1C6 /* StateObject+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF066B492AD53BEA0076B1C6 /* StateObject+.swift */; };
+		DF066B4D2AD5408E0076B1C6 /* TagCloud in Frameworks */ = {isa = PBXBuildFile; productRef = DF066B4C2AD5408E0076B1C6 /* TagCloud */; };
+		DF066B532AD5442B0076B1C6 /* PanModal in Frameworks */ = {isa = PBXBuildFile; productRef = DF066B522AD5442B0076B1C6 /* PanModal */; };
+		DF066B562AD544A90076B1C6 /* SwiftUIIntrospect in Frameworks */ = {isa = PBXBuildFile; productRef = DF066B552AD544A90076B1C6 /* SwiftUIIntrospect */; };
+		DF066B592AD5451E0076B1C6 /* SwifterSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DF066B582AD5451E0076B1C6 /* SwifterSwift */; };
+		DF066B5C2AD5455B0076B1C6 /* KakaJSON in Frameworks */ = {isa = PBXBuildFile; productRef = DF066B5B2AD5455B0076B1C6 /* KakaJSON */; };
+		DF066B5F2AD545810076B1C6 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = DF066B5E2AD545810076B1C6 /* SwiftyJSON */; };
+		DF066B622AD545CE0076B1C6 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DF066B612AD545CE0076B1C6 /* Kingfisher */; };
+		DF066B652AD546330076B1C6 /* Toaster in Frameworks */ = {isa = PBXBuildFile; productRef = DF066B642AD546330076B1C6 /* Toaster */; };
 		DF1F35522AC17FF9009147D3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1F35512AC17FF9009147D3 /* MainView.swift */; };
 		DF1F35572AC18075009147D3 /* AAEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1F35562AC18075009147D3 /* AAEnums.swift */; };
 		DF1F355A2AC1825F009147D3 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1F35592AC1825F009147D3 /* MainViewModel.swift */; };
@@ -44,6 +58,10 @@
 		DF1F35632AC185B8009147D3 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1F35622AC185B8009147D3 /* WelcomeViewModel.swift */; };
 		DF1F35692AC18CD4009147D3 /* GlobalFuction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1F35682AC18CD4009147D3 /* GlobalFuction.swift */; };
 		DF1F356C2AC1908A009147D3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1F356B2AC1908A009147D3 /* LoginView.swift */; };
+		DF5D4C262AD54DF1006981CA /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = DF5D4C252AD54DF1006981CA /* Moya */; };
+		DF5D4C292AD54E9F006981CA /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = DF5D4C282AD54E9F006981CA /* Lottie */; };
+		DF5D4C2C2AD54EE2006981CA /* ZLPhotoBrowser in Frameworks */ = {isa = PBXBuildFile; productRef = DF5D4C2B2AD54EE2006981CA /* ZLPhotoBrowser */; };
+		DF5D4C2F2AD54FB2006981CA /* Qiniu in Frameworks */ = {isa = PBXBuildFile; productRef = DF5D4C2E2AD54FB2006981CA /* Qiniu */; };
 		DF71968F2AA0702E0073F214 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF71968E2AA0702E0073F214 /* AppDelegate.swift */; };
 		DF7196912AA0702E0073F214 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7196902AA0702E0073F214 /* SceneDelegate.swift */; };
 		DF7196982AA0702F0073F214 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF7196972AA0702F0073F214 /* Assets.xcassets */; };
@@ -130,7 +148,7 @@
 		DF066B242AD3C0760076B1C6 /* CharacterMatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterMatchView.swift; sourceTree = "<group>"; };
 		DF066B262AD3C0960076B1C6 /* PetAdoptCompletedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetAdoptCompletedView.swift; sourceTree = "<group>"; };
 		DF066B282AD3C0CE0076B1C6 /* ThirdSDKManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdSDKManager.swift; sourceTree = "<group>"; };
-		DF066B2A2AD3C30F0076B1C6 /* RouteStore+Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RouteStore+Route.swift"; sourceTree = "<group>"; };
+		DF066B2A2AD3C30F0076B1C6 /* RouteStore+Helps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RouteStore+Helps.swift"; sourceTree = "<group>"; };
 		DF066B2C2AD3CDF10076B1C6 /* UserAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAvatar.swift; sourceTree = "<group>"; };
 		DF066B302AD3D5E30076B1C6 /* UploadUserAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadUserAvatar.swift; sourceTree = "<group>"; };
 		DF066B322AD3E1620076B1C6 /* PerfectBaseInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfectBaseInfoViewModel.swift; sourceTree = "<group>"; };
@@ -139,6 +157,12 @@
 		DF066B392AD3EEA30076B1C6 /* NDBottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDBottomSheetView.swift; sourceTree = "<group>"; };
 		DF066B3B2AD3F0120076B1C6 /* NDBottomSheetCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDBottomSheetCard.swift; sourceTree = "<group>"; };
 		DF066B3D2AD3F1DC0076B1C6 /* NDBottomSheetItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDBottomSheetItem.swift; sourceTree = "<group>"; };
+		DF066B3F2AD4E8FA0076B1C6 /* GlobalDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalDataStore.swift; sourceTree = "<group>"; };
+		DF066B412AD4F0180076B1C6 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		DF066B432AD4F5C00076B1C6 /* PetApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetApi.swift; sourceTree = "<group>"; };
+		DF066B452AD4FAEA0076B1C6 /* PetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetModel.swift; sourceTree = "<group>"; };
+		DF066B472AD539880076B1C6 /* PetRecommendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetRecommendView.swift; sourceTree = "<group>"; };
+		DF066B492AD53BEA0076B1C6 /* StateObject+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StateObject+.swift"; sourceTree = "<group>"; };
 		DF1F35512AC17FF9009147D3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		DF1F35562AC18075009147D3 /* AAEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAEnums.swift; sourceTree = "<group>"; };
 		DF1F35592AC1825F009147D3 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
@@ -217,7 +241,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF066B532AD5442B0076B1C6 /* PanModal in Frameworks */,
 				AA90DF0E0CC2F503883F939F /* Pods_SwiftUIRoute.framework in Frameworks */,
+				DF066B5F2AD545810076B1C6 /* SwiftyJSON in Frameworks */,
+				DF5D4C2F2AD54FB2006981CA /* Qiniu in Frameworks */,
+				DF066B622AD545CE0076B1C6 /* Kingfisher in Frameworks */,
+				DF066B4D2AD5408E0076B1C6 /* TagCloud in Frameworks */,
+				DF066B652AD546330076B1C6 /* Toaster in Frameworks */,
+				DF5D4C2C2AD54EE2006981CA /* ZLPhotoBrowser in Frameworks */,
+				DF5D4C292AD54E9F006981CA /* Lottie in Frameworks */,
+				DF066B592AD5451E0076B1C6 /* SwifterSwift in Frameworks */,
+				DF066B562AD544A90076B1C6 /* SwiftUIIntrospect in Frameworks */,
+				DF5D4C262AD54DF1006981CA /* Moya in Frameworks */,
+				DF066B5C2AD5455B0076B1C6 /* KakaJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +292,7 @@
 			isa = PBXGroup;
 			children = (
 				DF066B242AD3C0760076B1C6 /* CharacterMatchView.swift */,
+				DF066B472AD539880076B1C6 /* PetRecommendView.swift */,
 			);
 			path = petmatch;
 			sourceTree = "<group>";
@@ -308,6 +345,7 @@
 				DF066B012AD2A37B0076B1C6 /* UserInfo.swift */,
 				DF066B052AD2A6190076B1C6 /* TokenModel.swift */,
 				DF066B072AD2A76F0076B1C6 /* StepModel.swift */,
+				DF066B452AD4FAEA0076B1C6 /* PetModel.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -320,6 +358,7 @@
 				DF066B112AD2AEFE0076B1C6 /* BaseViewModel.swift */,
 				DF066B282AD3C0CE0076B1C6 /* ThirdSDKManager.swift */,
 				DF066B342AD3E42B0076B1C6 /* OSSManager.swift */,
+				DF066B3F2AD4E8FA0076B1C6 /* GlobalDataStore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -425,7 +464,7 @@
 				DF7196A32AA0728B0073F214 /* Base */,
 				DF7196AC2AA073A90073F214 /* Route.swift */,
 				DF7196B22AA074D00073F214 /* RouteStore.swift */,
-				DF066B2A2AD3C30F0076B1C6 /* RouteStore+Route.swift */,
+				DF066B2A2AD3C30F0076B1C6 /* RouteStore+Helps.swift */,
 				DF7196B02AA074490073F214 /* Route+Page.swift */,
 			);
 			path = Route;
@@ -494,6 +533,8 @@
 				DF066B1B2AD3A26C0076B1C6 /* Styles.swift */,
 				DF7D8B4D2AC4132D00FA0E01 /* Shape+.swift */,
 				DF066B1D2AD3A56D0076B1C6 /* Button+.swift */,
+				DF066B412AD4F0180076B1C6 /* String+.swift */,
+				DF066B492AD53BEA0076B1C6 /* StateObject+.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -535,6 +576,7 @@
 				DF066B092AD2AAB60076B1C6 /* CommonApi.swift */,
 				DF066B0B2AD2AAC60076B1C6 /* LoginApi.swift */,
 				DF066B0D2AD2AACF0076B1C6 /* UserApi.swift */,
+				DF066B432AD4F5C00076B1C6 /* PetApi.swift */,
 			);
 			path = Apis;
 			sourceTree = "<group>";
@@ -623,13 +665,26 @@
 				DF7196872AA0702E0073F214 /* Sources */,
 				DF7196882AA0702E0073F214 /* Frameworks */,
 				DF7196892AA0702E0073F214 /* Resources */,
-				1DFB169E00962DD667E1CF09 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = SwiftUIRoute;
+			packageProductDependencies = (
+				DF066B4C2AD5408E0076B1C6 /* TagCloud */,
+				DF066B522AD5442B0076B1C6 /* PanModal */,
+				DF066B552AD544A90076B1C6 /* SwiftUIIntrospect */,
+				DF066B582AD5451E0076B1C6 /* SwifterSwift */,
+				DF066B5B2AD5455B0076B1C6 /* KakaJSON */,
+				DF066B5E2AD545810076B1C6 /* SwiftyJSON */,
+				DF066B612AD545CE0076B1C6 /* Kingfisher */,
+				DF066B642AD546330076B1C6 /* Toaster */,
+				DF5D4C252AD54DF1006981CA /* Moya */,
+				DF5D4C282AD54E9F006981CA /* Lottie */,
+				DF5D4C2B2AD54EE2006981CA /* ZLPhotoBrowser */,
+				DF5D4C2E2AD54FB2006981CA /* Qiniu */,
+			);
 			productName = SwiftUIRoute;
 			productReference = DF71968B2AA0702E0073F214 /* SwiftUIRoute.app */;
 			productType = "com.apple.product-type.application";
@@ -658,6 +713,20 @@
 				Base,
 			);
 			mainGroup = DF7196822AA0702E0073F214;
+			packageReferences = (
+				DF066B4B2AD5408E0076B1C6 /* XCRemoteSwiftPackageReference "TagCloud.git" */,
+				DF066B512AD5442B0076B1C6 /* XCRemoteSwiftPackageReference "PanModal.git" */,
+				DF066B542AD544A90076B1C6 /* XCRemoteSwiftPackageReference "swiftui-introspect" */,
+				DF066B572AD5451E0076B1C6 /* XCRemoteSwiftPackageReference "SwifterSwift" */,
+				DF066B5A2AD5455B0076B1C6 /* XCRemoteSwiftPackageReference "KakaJSON" */,
+				DF066B5D2AD545810076B1C6 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				DF066B602AD545CE0076B1C6 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				DF066B632AD546330076B1C6 /* XCRemoteSwiftPackageReference "Toaster" */,
+				DF5D4C242AD54DF1006981CA /* XCRemoteSwiftPackageReference "Moya.git" */,
+				DF5D4C272AD54E9F006981CA /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				DF5D4C2A2AD54EE2006981CA /* XCRemoteSwiftPackageReference "ZLPhotoBrowser" */,
+				DF5D4C2D2AD54FB2006981CA /* XCRemoteSwiftPackageReference "objc-sdk" */,
+			);
 			productRefGroup = DF71968C2AA0702E0073F214 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -697,23 +766,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1DFB169E00962DD667E1CF09 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIRoute/Pods-SwiftUIRoute-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIRoute/Pods-SwiftUIRoute-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftUIRoute/Pods-SwiftUIRoute-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		3F2EBCE9D59205CEA356FE2D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -753,13 +805,14 @@
 				DF7196A52AA072A40073F214 /* RouteNavigationController.swift in Sources */,
 				DF8C8F452AC5602400DF8895 /* NDToast.swift in Sources */,
 				DF1F35572AC18075009147D3 /* AAEnums.swift in Sources */,
+				DF066B442AD4F5C00076B1C6 /* PetApi.swift in Sources */,
 				DF066B272AD3C0960076B1C6 /* PetAdoptCompletedView.swift in Sources */,
 				DF7D8B452AC40C7A00FA0E01 /* BarBackgorundView.swift in Sources */,
 				DF066B102AD2AE5C0076B1C6 /* LoginViewModel.swift in Sources */,
 				DF8C8F432AC55B9800DF8895 /* NDLoaddingView.swift in Sources */,
 				DF815D7A2AC44DBA008DB6DC /* NDProgress.swift in Sources */,
 				DFD766292AA983C300233310 /* SwiftUIAndModifier.swift in Sources */,
-				DF066B2B2AD3C30F0076B1C6 /* RouteStore+Route.swift in Sources */,
+				DF066B2B2AD3C30F0076B1C6 /* RouteStore+Helps.swift in Sources */,
 				DF7196BB2AA07FCD0073F214 /* View+Route.swift in Sources */,
 				DF8C8F152AC5230500DF8895 /* NDNavBar.swift in Sources */,
 				DF7D8B322AC3BDAA00FA0E01 /* HomeView.swift in Sources */,
@@ -767,6 +820,7 @@
 				DF7196A92AA072C00073F214 /* RouteViewController.swift in Sources */,
 				DF815D732AC43A65008DB6DC /* MoyaResult+Extension.swift in Sources */,
 				DF71968F2AA0702E0073F214 /* AppDelegate.swift in Sources */,
+				DF066B402AD4E8FA0076B1C6 /* GlobalDataStore.swift in Sources */,
 				DF066B3A2AD3EEA30076B1C6 /* NDBottomSheetView.swift in Sources */,
 				DF1F35692AC18CD4009147D3 /* GlobalFuction.swift in Sources */,
 				DF066B2D2AD3CDF10076B1C6 /* UserAvatar.swift in Sources */,
@@ -784,6 +838,7 @@
 				DF8C8F172AC5273700DF8895 /* NDBottomBar.swift in Sources */,
 				DF815D692AC43889008DB6DC /* Networking.swift in Sources */,
 				DF066B1A2AD39F1D0076B1C6 /* TextField+.swift in Sources */,
+				DF066B422AD4F0180076B1C6 /* String+.swift in Sources */,
 				DF066B0C2AD2AAC60076B1C6 /* LoginApi.swift in Sources */,
 				DF7D8B542AC413FA00FA0E01 /* ProjectConfig.swift in Sources */,
 				DF7196B12AA074490073F214 /* Route+Page.swift in Sources */,
@@ -808,15 +863,18 @@
 				DF1F35522AC17FF9009147D3 /* MainView.swift in Sources */,
 				DF066B022AD2A37B0076B1C6 /* UserInfo.swift in Sources */,
 				DF7D8B4A2AC4108C00FA0E01 /* Color+.swift in Sources */,
+				DF066B4A2AD53BEA0076B1C6 /* StateObject+.swift in Sources */,
 				DF7D8B472AC40DDA00FA0E01 /* BottomBarViewModifier.swift in Sources */,
 				DF7D8B402AC3FF2500FA0E01 /* TestView.swift in Sources */,
 				DF815D752AC43B1C008DB6DC /* Response+Extension.swift in Sources */,
 				DF066B042AD2A4AB0076B1C6 /* Convertible+.swift in Sources */,
 				DF815D6E2AC4394A008DB6DC /* NetworkLoggerPlugin.swift in Sources */,
+				DF066B482AD539880076B1C6 /* PetRecommendView.swift in Sources */,
 				DF066B382AD3E8810076B1C6 /* NDListPickerSheet.swift in Sources */,
 				DF066B332AD3E1620076B1C6 /* PerfectBaseInfoViewModel.swift in Sources */,
 				DF1F35632AC185B8009147D3 /* WelcomeViewModel.swift in Sources */,
 				DF1F35612AC18573009147D3 /* WelcomeView.swift in Sources */,
+				DF066B462AD4FAEA0076B1C6 /* PetModel.swift in Sources */,
 				DF066B292AD3C0CE0076B1C6 /* ThirdSDKManager.swift in Sources */,
 				DF815D712AC43A46008DB6DC /* MoyaProviderType+Extension.swift in Sources */,
 				DF066B082AD2A76F0076B1C6 /* StepModel.swift in Sources */,
@@ -1032,6 +1090,169 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DF066B4B2AD5408E0076B1C6 /* XCRemoteSwiftPackageReference "TagCloud.git" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yarspirin/TagCloud.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		DF066B512AD5442B0076B1C6 /* XCRemoteSwiftPackageReference "PanModal.git" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/slackhq/PanModal.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		DF066B542AD544A90076B1C6 /* XCRemoteSwiftPackageReference "swiftui-introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/swiftui-introspect";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		DF066B572AD5451E0076B1C6 /* XCRemoteSwiftPackageReference "SwifterSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwifterSwift/SwifterSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		DF066B5A2AD5455B0076B1C6 /* XCRemoteSwiftPackageReference "KakaJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kakaopensource/KakaJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		DF066B5D2AD545810076B1C6 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		DF066B602AD545CE0076B1C6 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		DF066B632AD546330076B1C6 /* XCRemoteSwiftPackageReference "Toaster" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Toaster";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		DF5D4C242AD54DF1006981CA /* XCRemoteSwiftPackageReference "Moya.git" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.0;
+			};
+		};
+		DF5D4C272AD54E9F006981CA /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		DF5D4C2A2AD54EE2006981CA /* XCRemoteSwiftPackageReference "ZLPhotoBrowser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/longitachi/ZLPhotoBrowser";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		DF5D4C2D2AD54FB2006981CA /* XCRemoteSwiftPackageReference "objc-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/qiniu/objc-sdk";
+			requirement = {
+				kind = versionRange;
+				maximumVersion = 9.0.0;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DF066B4C2AD5408E0076B1C6 /* TagCloud */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF066B4B2AD5408E0076B1C6 /* XCRemoteSwiftPackageReference "TagCloud.git" */;
+			productName = TagCloud;
+		};
+		DF066B522AD5442B0076B1C6 /* PanModal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF066B512AD5442B0076B1C6 /* XCRemoteSwiftPackageReference "PanModal.git" */;
+			productName = PanModal;
+		};
+		DF066B552AD544A90076B1C6 /* SwiftUIIntrospect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF066B542AD544A90076B1C6 /* XCRemoteSwiftPackageReference "swiftui-introspect" */;
+			productName = SwiftUIIntrospect;
+		};
+		DF066B582AD5451E0076B1C6 /* SwifterSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF066B572AD5451E0076B1C6 /* XCRemoteSwiftPackageReference "SwifterSwift" */;
+			productName = SwifterSwift;
+		};
+		DF066B5B2AD5455B0076B1C6 /* KakaJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF066B5A2AD5455B0076B1C6 /* XCRemoteSwiftPackageReference "KakaJSON" */;
+			productName = KakaJSON;
+		};
+		DF066B5E2AD545810076B1C6 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF066B5D2AD545810076B1C6 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		DF066B612AD545CE0076B1C6 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF066B602AD545CE0076B1C6 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		DF066B642AD546330076B1C6 /* Toaster */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF066B632AD546330076B1C6 /* XCRemoteSwiftPackageReference "Toaster" */;
+			productName = Toaster;
+		};
+		DF5D4C252AD54DF1006981CA /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF5D4C242AD54DF1006981CA /* XCRemoteSwiftPackageReference "Moya.git" */;
+			productName = Moya;
+		};
+		DF5D4C282AD54E9F006981CA /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF5D4C272AD54E9F006981CA /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		DF5D4C2B2AD54EE2006981CA /* ZLPhotoBrowser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF5D4C2A2AD54EE2006981CA /* XCRemoteSwiftPackageReference "ZLPhotoBrowser" */;
+			productName = ZLPhotoBrowser;
+		};
+		DF5D4C2E2AD54FB2006981CA /* Qiniu */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF5D4C2D2AD54FB2006981CA /* XCRemoteSwiftPackageReference "objc-sdk" */;
+			productName = Qiniu;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DF7196832AA0702E0073F214 /* Project object */;
 }

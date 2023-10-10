@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import Qiniu
+import QiniuSDK
 import SwifterSwift
 
 // 七牛云传图Token

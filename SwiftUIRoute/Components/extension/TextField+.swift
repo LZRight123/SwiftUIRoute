@@ -11,6 +11,6 @@ extension TextField {
     func ndNormal() -> some View {
         font(.body1)
             .foregroundColor(.f1)
-            .accentColor(.red)
+            .frame(maxWidth: .infinity)
     }
 }
